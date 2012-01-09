@@ -23,69 +23,6 @@ abstract class Module {
     protected $_properties = null;
     protected $_content    = null;
 
-    private $_mapping_spec_master = array(
-        'height'            => array(
-            'name'      => 'object-height',
-            'validate'  => '\d+px'
-        ),
-        'left'              => array(
-            'name' => 'object-left',
-            'validate' => '\d+px'
-        ),
-        'top'               => array(
-            'name' => 'object-top',
-            'validate' => '\d+px'
-        ),
-        'width'             => array(
-            'name' => 'object-width',
-            'validate' => '\d+px'
-        ),
-        'background-color'  => array(
-            'name' => 'text-background-color',
-            'validate' => '[\w\s-,"]'//'rgba\(\d+, \d+, \d+, \d+\)'
-        ),
-        'color'             => array(
-            'name' => 'text-font-color',
-            'validate' => '[\w\s-,"]'//'rgb\(\d+, \d+, \d+\)'
-        ),
-        'font-family'       => array(
-            'name' => 'text-font-family',
-            'validate' => '[\w\s-,"]'
-        ),
-        'font-size'         => array(
-            'name' => 'text-font-size',
-            'validate' => '\dpx'
-        ),
-        'font-weight'       => array(
-            'name' => 'text-font-weight',
-            'validate' => 'bold|normal|'
-        ),
-        'letter-spacing'    => array(
-            'name' => 'text-letter-spacing',
-            'validate' => '[\w\s-]'
-        ),
-        'text-align'        => array(
-            'name' => 'text-align',
-            'validate' => 'left|right'
-        ),
-        'height'            => array(
-            'name' => 'object-height',
-            'validate' => '\d+px'
-        ),
-        'left'              => array(
-            'name' => 'object-left',
-            'validate' => '\d+px'
-        ),
-        'top'               => array(
-            'name' => 'object-top',
-            'validate' => '\d+px'
-        ),
-        'width'             => array(
-            'name' => 'object-width',
-            'validate' => '\d+px'
-        )
-    );
-
     /**
      *
      *

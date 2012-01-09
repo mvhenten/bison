@@ -1,31 +1,48 @@
 <?php
+/**
+ * scripts/bison-cli.php
+ *
+ * @author Matthijs van Henten <matthijs@ischen.nl>
+ * @package Bison
+ */
+
+
 define( 'G_BASE_DIR', dirname(__FILE__) . '/../' );
 
-require_once( G_BASE_DIR . 'Glue/Util.php');
-require_once( G_BASE_DIR . 'Glue/App.php');
+require_once G_BASE_DIR . 'Glue/Util.php';
+require_once G_BASE_DIR . 'Glue/App.php';
 
 use Glue\Util;
 use Glue\App;
 
 @list( $script, $in, $out ) = $argv;
 
-$usage = function(){
+global $json;
+
+/**
+ *
+ */
+$usage = function() {
     echo "parse a json file into a hotglue content directory\n";
     echo "USAGE: " . basename(__FILE__) . " <INPUT> <TARGET>\n";
 };
 
-if( !$in || !file_exists($in) ){
+if ( !$in || !file_exists($in) ) {
     $usage();
     die("ERROR: no input file given!\n");
 }
-else if( ( $json = json_decode($in) ) && ! $json ){
+else {
+    $json = json_decode( file_get_contents($in) );
+}
+
+if ( ! $json ) {
     $usage();
     die("ERROR: not a valid json string!\n");
 }
-else if( !$out || !file_exists($out) ){
+elseif ( !$out || !file_exists($out) ) {
     $usage();
 
-    $tempfile = tempname( dirname(__FILE__), 'hotglue-' );
+    $tempfile = tempnam( dirname(__FILE__), 'hotglue-' );
 
     echo "no target given, writing to $tempfile\n";
 
@@ -34,7 +51,10 @@ else if( !$out || !file_exists($out) ){
 
     $out = $tempfile;
 }
+else {
+    echo "parsing $in to $out";
+}
 
-$app = App( $out, $json );
 
+$app = new App( $out, $json );
 $app->write();

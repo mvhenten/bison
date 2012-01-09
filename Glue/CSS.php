@@ -57,7 +57,7 @@ class CSS {
         ),
         'text-align'        => array(
             'name' => 'text-align',
-            'validate' => 'left|right'
+            'validate' => 'left|right|center'
         ),
         'height'            => array(
             'name' => 'object-height',

@@ -139,25 +139,8 @@ abstract class Module {
      * @return unknown
      */
     protected function _build__css() {
-        return new CSS( $this->style, $this->mapping );
+        return new CSS( $this->style, $this->_mapping );
     }
-
-
-    /**
-     *
-     *
-     * @return unknown
-     */
-    protected function _build__mapping() {
-        $mapping =  $this->_mapping_spec_master;
-
-        if ( isset($this->_mapping_spec ) && is_array($this->_mapping_spec ) ) {
-            $mapping = array_merge( $mapping, $this->_mapping_spec );
-        }
-
-        return array_filter($mapping);
-    }
-
 
     /**
      *

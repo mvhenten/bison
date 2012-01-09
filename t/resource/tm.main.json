@@ -1,0 +1,1545 @@
+{
+   "title":"in/compatible | transmediale",
+   "style":{
+      "font-size":"13px",
+      "font-family":"arial, verdana, helvetica, sans-serif",
+      "font-weight":"normal",
+      "color":"rgb(0, 0, 0)",
+      "letter-spacing":"normal",
+      "width":"1265px",
+      "height":"1402px",
+      "float":"none",
+      "display":"block",
+      "position":"static",
+      "background-color":"rgb(235, 235, 235)",
+      "background-image":"url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/sky.jpg)",
+      "background-repeat":"repeat",
+      "background-position":"0% 0%",
+      "background-attachment":"fixed"
+   },
+   "elements":[
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(22, 21, 243)",
+            "letter-spacing":"normal",
+            "width":"60px",
+            "height":"16px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"32px",
+            "left":"162px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/"
+         },
+         "type":"link",
+         "text":""
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(22, 21, 243)",
+            "letter-spacing":"normal",
+            "width":"60px",
+            "height":"26px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"19px",
+            "left":"162px"
+         },
+         "properties":{
+            "src":"http://www.transmediale.de/sites/localsite/themes/ninesixty/styles/tm12/webfiles/tm.png"
+         },
+         "type":"image",
+         "text":""
+      },
+      {
+         "style":{
+            "font-size":"12px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(132, 131, 131)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"43px",
+            "height":"15px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"25px",
+            "left":"595px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/about"
+         },
+         "type":"link",
+         "text":"About"
+      },
+      {
+         "style":{
+            "font-size":"12px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(132, 131, 131)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"41px",
+            "height":"15px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"25px",
+            "left":"648px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/press"
+         },
+         "type":"link",
+         "text":"Press"
+      },
+      {
+         "style":{
+            "font-size":"12px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(132, 131, 131)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"82px",
+            "height":"15px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"25px",
+            "left":"699px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/newsletter-signup"
+         },
+         "type":"link",
+         "text":"Newsletter"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(132, 131, 131)",
+            "letter-spacing":"normal",
+            "text-align":"right",
+            "width":"36px",
+            "height":"16px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"25px",
+            "left":"933px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/user"
+         },
+         "type":"link",
+         "text":"Login"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(132, 131, 131)",
+            "letter-spacing":"normal",
+            "text-align":"right",
+            "width":"121px",
+            "height":"16px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"25px",
+            "left":"981px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/register"
+         },
+         "type":"link",
+         "text":"Create new account"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "width":"303px",
+            "height":"245px",
+            "float":"left",
+            "display":"block",
+            "position":"static",
+            "margin-right":"15px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"66px",
+            "left":"162px"
+         },
+         "properties":{
+
+         },
+         "text":"\n  <div class=\"festivalmenuhead\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 293px; height: 52px; float: none; display: block; position: static; padding-left: 10px; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/top2.png); background-repeat: no-repeat; background-position: 50% 2px; background-attachment: scroll;\"><h2 style=\"font-size: 23px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 293px; height: 34px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></h2></div>\n    <div class=\"festival-menu\" id=\"festival-menu-1\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 303px; height: 193px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/navibox21.png); background-repeat: no-repeat; background-position: 50% 50%; background-attachment: scroll;\">\n  <h3 style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; text-align: center; width: 303px; height: 24px; float: none; display: block; position: static; margin-bottom: 6px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">in/compatible</h3><ul class=\"menu\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 297px; height: 144px; float: none; display: block; position: static; padding-bottom: 2px; margin-left: 6px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"><li class=\"collapsed first active-trail link-festival\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n<li class=\"leaf link\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n<li class=\"leaf link\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n<li class=\"leaf link\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n<li class=\"leaf link\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n<li class=\"leaf link\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n<li class=\"leaf link\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n<li class=\"leaf last link\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n</ul>  </div>\n",
+         "type":"text"
+      },
+      {
+         "style":{
+            "font-size":"18px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"161px",
+            "height":"21px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"74px",
+            "left":"172px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/festival"
+         },
+         "type":"link",
+         "text":"transmediale 2K 12"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(17, 17, 17)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/goldhover.png)",
+            "background-repeat":"no-repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"150px",
+            "left":"173px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/festival"
+         },
+         "type":"link",
+         "text":"in/compatible"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"168px",
+            "left":"173px"
+         },
+         "properties":{
+            "href":""
+         },
+         "type":"link",
+         "text":"dark drives [exhibition]"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"186px",
+            "left":"173px"
+         },
+         "properties":{
+            "href":""
+         },
+         "type":"link",
+         "text":"in/compatible symposium [conference]"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"204px",
+            "left":"173px"
+         },
+         "properties":{
+            "href":""
+         },
+         "type":"link",
+         "text":"satellite stories [video]"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"222px",
+            "left":"173px"
+         },
+         "properties":{
+            "href":""
+         },
+         "type":"link",
+         "text":"reSource [talks, workshops, presentations]"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"240px",
+            "left":"173px"
+         },
+         "properties":{
+            "href":""
+         },
+         "type":"link",
+         "text":"the ghosts in the machine [performance]"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"258px",
+            "left":"173px"
+         },
+         "properties":{
+            "href":""
+         },
+         "type":"link",
+         "text":"25 years"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"276px",
+            "left":"173px"
+         },
+         "properties":{
+            "href":""
+         },
+         "type":"link",
+         "text":"vorspiel [pre-festival programme]"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "width":"303px",
+            "height":"52px",
+            "float":"left",
+            "display":"block",
+            "position":"static",
+            "margin-right":"15px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"66px",
+            "left":"480px"
+         },
+         "properties":{
+
+         },
+         "text":"\n  <div class=\"festivalmenuhead\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: center; width: 303px; height: 52px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/top2.png); background-repeat: no-repeat; background-position: 50% 2px; background-attachment: scroll;\"><h2 style=\"font-size: 23px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; text-align: center; width: 303px; height: 34px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></h2></div> \n",
+         "type":"text"
+      },
+      {
+         "style":{
+            "font-size":"18px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"center",
+            "width":"107px",
+            "height":"21px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"74px",
+            "left":"578.5px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/festival"
+         },
+         "type":"link",
+         "text":"in/compatible"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "width":"303px",
+            "height":"245px",
+            "float":"left",
+            "display":"block",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"66px",
+            "left":"798px"
+         },
+         "properties":{
+
+         },
+         "text":"\n  <div class=\"festivalmenuhead\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: right; width: 293px; height: 52px; float: none; display: block; position: static; padding-right: 10px; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/top2.png); background-repeat: no-repeat; background-position: 50% 2px; background-attachment: scroll;\"><h2 style=\"font-size: 23px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; text-align: right; width: 293px; height: 34px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></h2></div>\n   <div class=\"festival-menu\" id=\"festival-menu-2\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 303px; height: 74px; float: none; display: block; position: static; margin-bottom: 4px; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/navibox22.png); background-repeat: no-repeat; background-position: 50% 50%; background-attachment: scroll;\">\n  <h3 style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; text-align: center; width: 303px; height: 24px; float: none; display: block; position: static; margin-bottom: 6px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">Programme</h3><ul class=\"menu\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 297px; height: 36px; float: none; display: block; position: static; padding-bottom: 2px; margin-left: 6px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"><li class=\"leaf first link\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n<li class=\"leaf last link\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n</ul>  </div>\n  \n    <div class=\"festival-menu\" id=\"festival-menu-3\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 303px; height: 115px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/navibox23.png); background-repeat: no-repeat; background-position: 50% 50%; background-attachment: scroll;\">\n  <h3 style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; text-align: center; width: 303px; height: 24px; float: none; display: block; position: static; margin-bottom: 6px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">Service</h3><ul class=\"menu\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 297px; height: 72px; float: none; display: block; position: static; padding-bottom: 2px; margin-left: 6px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"><li class=\"leaf first link-festival-tickets\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n<li class=\"leaf link-festival-professionals-accreditation\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n<li class=\"leaf link-festival-service\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n<li class=\"leaf last link-festival-supporters\" style=\"font-size: 11px; font-family: Verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: left; width: 292px; height: 16px; float: none; display: list-item; position: static; padding-top: 2px; margin-left: 5px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></li>\n</ul>  </div>\n",
+         "type":"text"
+      },
+      {
+         "style":{
+            "font-size":"18px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"right",
+            "width":"151px",
+            "height":"21px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"74px",
+            "left":"940px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/festival"
+         },
+         "type":"link",
+         "text":"31/01 - 05/02 2012"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"150px",
+            "left":"809px"
+         },
+         "properties":{
+            "href":""
+         },
+         "type":"link",
+         "text":"festival locations"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"168px",
+            "left":"809px"
+         },
+         "properties":{
+            "href":""
+         },
+         "type":"link",
+         "text":"festival schedule"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"228px",
+            "left":"809px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/festival/tickets"
+         },
+         "type":"link",
+         "text":"tickets"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"246px",
+            "left":"809px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/festival/professionals-accreditation"
+         },
+         "type":"link",
+         "text":"professional accreditation"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"264px",
+            "left":"809px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/festival/service"
+         },
+         "type":"link",
+         "text":"service"
+      },
+      {
+         "style":{
+            "font-size":"11px",
+            "font-family":"Verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(254, 253, 230)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"285px",
+            "height":"16px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "padding-left":"2px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"282px",
+            "left":"809px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/festival/supporters"
+         },
+         "type":"link",
+         "text":"supporters"
+      },
+      {
+         "style":{
+            "font-size":"12px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "width":"620px",
+            "height":"792px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"352px",
+            "left":"162px"
+         },
+         "properties":{
+
+         },
+         "text":"\n        <div class=\"views-row views-row-1 views-row-odd views-row-first\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 338px; float: none; display: block; position: static; padding-top: 14px; padding-right: 14px; padding-left: 14px; margin-bottom: 20px; border-top: 1px solid rgb(0, 0, 0); border-right: 1px solid rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0); border-left: 1px solid rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/BIGBACKSHADE.png); background-repeat: repeat-y; background-position: 100% 0%; background-attachment: scroll;\">\n    \n<div class=\"buildmode-ds_teser_festival\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 320px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n  <div class=\"node node-type-festival  clear-block\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 320px; float: none; display: block; position: static; margin-bottom: 18px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n    <div class=\"nd-region-middle-wrapper  nd-no-sidebars\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 320px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"><div class=\"nd-region-middle\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 320px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"><div class=\"cloud\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 124px; float: none; display: block; position: static; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/sky1.jpg); background-repeat: no-repeat; background-position: 0% 0%; background-attachment: scroll;\">\n\n<div class=\"field field-type-filefield field-field-festival-image\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 128px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n    <div class=\"field-items\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 128px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n            <div class=\"field-item odd first\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n                            </div>\n                <div class=\"field-item even further\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n                                  </div>\n                  <div class=\"field-item odd further\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 128px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n                                  </div>\n          </div>\n</div>\n\n</div>\n<div class=\"field field-title\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 40px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"><h1 style=\"font-size: 26px; font-family: verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: center; width: 590px; height: 40px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.2, rgb(204, 177, 0)), color-stop(0.8, rgb(250, 244, 210))); background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></h1></div><div class=\"field field-festival-teaser\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 570px; height: 96px; float: none; display: block; position: static; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; background-color: rgb(255, 255, 255); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n    <div class=\"field-items\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 570px; height: 96px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n            <div class=\"field-item odd\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 570px; height: 96px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n                    \n        </div>\n        </div>\n</div>\n\n\n    <div id=\"panel-20271\" class=\"relatedcontent\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div>\n\n</div></div>  </div> \n</div> \n  </div>\n  <div class=\"views-row views-row-2 views-row-even views-row-last\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 402px; float: none; display: block; position: static; padding-top: 14px; padding-right: 14px; padding-left: 14px; margin-bottom: 20px; border-top: 1px solid rgb(0, 0, 0); border-right: 1px solid rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0); border-left: 1px solid rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/BIGBACKSHADE.png); background-repeat: repeat-y; background-position: 100% 0%; background-attachment: scroll;\">\n    \n<div class=\"buildmode-ds_teser_festival\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 384px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n  <div class=\"node node-type-festival  clear-block\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 384px; float: none; display: block; position: static; margin-bottom: 18px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n    <div class=\"nd-region-middle-wrapper  nd-no-sidebars\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 384px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"><div class=\"nd-region-middle\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 384px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"><div class=\"cloud\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 124px; float: none; display: block; position: static; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/sky1.jpg); background-repeat: no-repeat; background-position: 0% 0%; background-attachment: scroll;\">\n\n\n</div>\n<div class=\"field field-title\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; height: 40px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"><h1 style=\"font-size: 26px; font-family: verdana, arial, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: center; width: 590px; height: 40px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.2, rgb(204, 177, 0)), color-stop(0.8, rgb(250, 244, 210))); background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></h1></div><div class=\"field field-festival-teaser\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 570px; height: 160px; float: none; display: block; position: static; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; background-color: rgb(255, 255, 255); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n    <div class=\"field-items\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 570px; height: 160px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n            <div class=\"field-item odd\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 570px; height: 160px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n                    \n        </div>\n        </div>\n</div>\n\n\n    <div id=\"panel-20260\" class=\"relatedcontent\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 590px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div>\n\n</div></div>  </div> \n</div> \n  </div>\n    ",
+         "type":"text"
+      },
+      {
+         "style":{
+            "font-size":"12px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(22, 21, 243)",
+            "letter-spacing":"normal",
+            "width":"160px",
+            "height":"122px",
+            "float":"left",
+            "display":"block",
+            "position":"static",
+            "margin-right":"33px",
+            "border-top":"1px solid rgb(213, 181, 52)",
+            "border-right":"1px solid rgb(213, 181, 52)",
+            "border-bottom":"1px solid rgb(213, 181, 52)",
+            "border-left":"1px solid rgb(213, 181, 52)",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"387px",
+            "left":"197px"
+         },
+         "properties":{
+            "src":"http://www.transmediale.de/files/imagecache/tm_small/twins.jpg"
+         },
+         "type":"image",
+         "text":""
+      },
+      {
+         "style":{
+            "font-size":"12px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(22, 21, 243)",
+            "letter-spacing":"normal",
+            "width":"160px",
+            "height":"122px",
+            "float":"left",
+            "display":"block",
+            "position":"static",
+            "margin-right":"29px",
+            "border-top":"1px solid rgb(213, 181, 52)",
+            "border-right":"1px solid rgb(213, 181, 52)",
+            "border-bottom":"1px solid rgb(213, 181, 52)",
+            "border-left":"1px solid rgb(213, 181, 52)",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"387px",
+            "left":"392px"
+         },
+         "properties":{
+            "src":"http://www.transmediale.de/files/imagecache/tm_small/twins.jpg"
+         },
+         "type":"image",
+         "text":""
+      },
+      {
+         "style":{
+            "font-size":"12px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(22, 21, 243)",
+            "letter-spacing":"normal",
+            "width":"162px",
+            "height":"15px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"499px",
+            "left":"583px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/content/transmediale-2012-programme-overview"
+         },
+         "type":"link",
+         "text":""
+      },
+      {
+         "style":{
+            "font-size":"12px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(22, 21, 243)",
+            "letter-spacing":"normal",
+            "width":"160px",
+            "height":"122px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "border-top":"1px solid rgb(213, 181, 52)",
+            "border-right":"1px solid rgb(213, 181, 52)",
+            "border-bottom":"1px solid rgb(213, 181, 52)",
+            "border-left":"1px solid rgb(213, 181, 52)",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"387px",
+            "left":"583px"
+         },
+         "properties":{
+            "src":"http://www.transmediale.de/files/imagecache/tm_small/twins.jpg"
+         },
+         "type":"image",
+         "text":""
+      },
+      {
+         "style":{
+            "font-size":"22px",
+            "font-family":"verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "text-align":"center",
+            "width":"514px",
+            "height":"26px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"538px",
+            "left":"215px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/content/transmediale-2012-programme-overview"
+         },
+         "type":"link",
+         "text":"transmediale 2012 Programme Overview"
+      },
+      {
+         "style":{
+            "font-size":"12px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "width":"570px",
+            "height":"96px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"581px",
+            "left":"187px"
+         },
+         "properties":{
+
+         },
+         "type":"text",
+         "text":"<strong style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; width: 106px; height: 15px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">transmediale 2012</strong> is an in/compatible being. Incompatibility is the  condition that arises when things are not  working together. With  <strong style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; width: 106px; height: 15px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">transmediale 2012</strong>, we are investigating the  productive and destructive  sides of incompatibility as a fundamental  condition for cultural  production in times of crisis. In this context  <strong style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; width: 106px; height: 15px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">transmediale 2012</strong> calls  for a transversal approach. With our theme in/compatible   we are acknowledging that there is equally the need for creative hacks   and modifications, as there is a need for a refusal of the quick   re-integration into business as usual. <a href=\"/node/20271/\" style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(22, 21, 243); letter-spacing: normal; width: 177px; height: 15px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">Read our programme overview</a>."
+      },
+      {
+         "style":{
+            "font-size":"12px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(22, 21, 243)",
+            "letter-spacing":"normal",
+            "width":"177px",
+            "height":"15px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"661px",
+            "left":"422px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/node/20271/"
+         },
+         "type":"link",
+         "text":"Read our programme overview"
+      },
+      {
+         "style":{
+            "font-size":"22px",
+            "font-family":"verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "text-align":"center",
+            "width":"198px",
+            "height":"26px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"912px",
+            "left":"373.5px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/content/festival-outline"
+         },
+         "type":"link",
+         "text":"Festival Outline"
+      },
+      {
+         "style":{
+            "font-size":"12px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "width":"570px",
+            "height":"160px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"955px",
+            "left":"187px"
+         },
+         "properties":{
+
+         },
+         "type":"text",
+         "text":"transmediale is preparing to get <strong style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; width: 76px; height: 15px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">in/compatible</strong> in 2012. The theme in/compatible probes the artistic imagination that is developed in a network culture where everything seems to connect, but not all fits in or works together. Under this festival theme we will present a diverse international programme: a two-day thematic <strong style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; width: 67px; height: 15px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">symposium</strong>, a curated <strong style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; width: 55px; height: 15px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">exhibition</strong>, an extensive <strong style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; width: 101px; height: 15px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">video programme</strong> and a <strong style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; width: 74px; height: 15px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">performance</strong> series which includes the legendary <strong style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; width: 107px; height: 15px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">Joshua Light Show</strong>. Another highlight is the launch of a new project platform, the <strong style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; width: 186px; height: 15px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">reSource for transmedial culture</strong>, which will present itself through an experimental programme of workshops, open discussions and performative interventions. The occasion of the <strong style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; width: 547px; height: 31px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">25th anniversary</strong> of transmediale will be marked by special screenings and panel discussions. On top of all this, we are partnering up with CTM for a festival <strong style=\"font-size: 12px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(0, 0, 0); letter-spacing: normal; width: 47px; height: 15px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">Vorspiel</strong> consisting of partner events spread all over the city in the weekend immediately preceding our opening."
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "width":"300px",
+            "height":"567px",
+            "float":"left",
+            "display":"block",
+            "position":"relative",
+            "margin-right":"10px",
+            "margin-bottom":"19px",
+            "margin-left":"10px",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"352px",
+            "left":"802px"
+         },
+         "properties":{
+
+         },
+         "text":"\n\t\t  <div id=\"block-block-237\" class=\"block block-block tix\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 258px; height: 76px; float: none; display: block; position: static; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; margin-bottom: 19px; border-top: 1px solid rgb(213, 181, 52); border-right: 1px solid rgb(213, 181, 52); border-bottom: 1px solid rgb(213, 181, 52); border-left: 1px solid rgb(213, 181, 52); background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/sky3.png); background-repeat: no-repeat; background-position: 0% 0%; background-attachment: scroll;\">\n\n  <div class=\"content\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 258px; height: 75px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n    <div class=\"goldtext\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: center; width: 258px; height: 75px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/tixxbg.png); background-repeat: repeat-x; background-position: 0% 0%; background-attachment: scroll;\"></div>  </div>\n</div>\n<div id=\"block-block-238\" class=\"block block-block imageblock\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 300px; height: 318px; float: none; display: block; position: static; margin-bottom: 19px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n\n  <div class=\"content\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 300px; height: 318px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n    <div style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 300px; height: 202px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></div>\n<div class=\"goldheader\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: center; width: 300px; height: 40px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/titlebg.png); background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></div>\n<div class=\"blue\" style=\"font-size: 11px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(255, 255, 255); letter-spacing: normal; width: 280px; height: 56px; float: none; display: block; position: static; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/bluebg.png); background-repeat: repeat-y; background-position: 0% 0%; background-attachment: scroll;\">The legendary, hypnotic and colourful 1960s <i style=\"font-size: 11px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(255, 255, 255); letter-spacing: normal; width: 280px; height: 28px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">Joshua Light Show</i> will perform alongside contemporary musicians as part of transmediale 2012 and CTM.12, combining analogue with modern digital visual experimentation.</div>\n  </div>\n</div>\n<div id=\"block-block-260\" class=\"block block-block\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 300px; height: 74px; float: none; display: block; position: static; margin-bottom: 19px; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n\n  <div class=\"content\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 300px; height: 74px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\n    <div class=\"goldheader\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; text-align: center; width: 300px; height: 40px; float: none; display: block; position: static; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/titlebg.png); background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"></div>\n<div class=\"blue\" style=\"font-size: 11px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(255, 255, 255); letter-spacing: normal; width: 280px; height: 14px; float: none; display: block; position: static; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; background-color: rgba(0, 0, 0, 0); background-image: url(http://www.transmediale.de/sites/www.transmediale.de/themes/ninesixty/styles/tm12/webfiles/img12/bluebg.png); background-repeat: repeat-y; background-position: 0% 0%; background-attachment: scroll;\">Join the team of transmediale 2012 in/compatible!</div>\n  </div>\n</div>\n\t\t",
+         "type":"text"
+      },
+      {
+         "style":{
+            "font-size":"22px",
+            "font-family":"verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "text-align":"center",
+            "width":"144px",
+            "height":"59px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"376px",
+            "left":"880px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/festival/tickets"
+         },
+         "type":"link",
+         "text":"Buy TicketsNow!"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(22, 21, 243)",
+            "letter-spacing":"normal",
+            "width":"300px",
+            "height":"16px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"683px",
+            "left":"802px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/node/20253/"
+         },
+         "type":"link",
+         "text":""
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(22, 21, 243)",
+            "letter-spacing":"normal",
+            "width":"300px",
+            "height":"207px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"489px",
+            "left":"802px"
+         },
+         "properties":{
+            "src":"http://www.transmediale.de/files/web/jls2.png"
+         },
+         "type":"image",
+         "text":""
+      },
+      {
+         "style":{
+            "font-size":"18px",
+            "font-family":"verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "text-align":"center",
+            "width":"190px",
+            "height":"22px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"700px",
+            "left":"857px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/node/20253/"
+         },
+         "type":"link",
+         "text":"Joshua Light Show"
+      },
+      {
+         "style":{
+            "font-size":"18px",
+            "font-family":"verdana, arial, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "text-align":"center",
+            "width":"142px",
+            "height":"22px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"835px",
+            "left":"881px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/content/volunteers2012"
+         },
+         "type":"link",
+         "text":"Volunteer Call"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "width":"220px",
+            "height":"114px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"1231px",
+            "left":"162px"
+         },
+         "properties":{
+
+         },
+         "type":"text",
+         "text":"transmediale office<br style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\nKlosterstraße 68<br style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\nD - 10179 Berlin<br style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\ntel:  49 (0)30 24 749 761<br style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\nfax:  49 (0)30 24 749 763<br style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\ninfo[at]transmediale.de"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "width":"220px",
+            "height":"114px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"1231px",
+            "left":"402px"
+         },
+         "properties":{
+
+         },
+         "type":"text",
+         "text":"Kulturprojekte Berlin GmbH<br style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\nGeschäftsführung: Moritz van Dülmen<br style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\"><br style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\nAG Charlottenburg, HRB 41312<br style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">\nUSt.-ID-Nr.: DE 137180214 | <a href=\"/about/imprint\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: bold; color: rgb(132, 131, 131); letter-spacing: normal; width: 32px; height: 16px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">more</a>"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(132, 131, 131)",
+            "letter-spacing":"normal",
+            "width":"32px",
+            "height":"16px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"1327px",
+            "left":"574px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/about/imprint"
+         },
+         "type":"link",
+         "text":"more"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(132, 131, 131)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"56px",
+            "height":"16px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"1232px",
+            "left":"642px"
+         },
+         "properties":{
+            "href":"http://www.facebook.com/transmediale"
+         },
+         "type":"link",
+         "text":"facebook"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(132, 131, 131)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"38px",
+            "height":"16px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"1251px",
+            "left":"642px"
+         },
+         "properties":{
+            "href":"http://twitter.com/transmediale"
+         },
+         "type":"link",
+         "text":"twitter"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(132, 131, 131)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"31px",
+            "height":"16px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"1270px",
+            "left":"642px"
+         },
+         "properties":{
+            "href":"http://www.flickr.com/photos/transmediale"
+         },
+         "type":"link",
+         "text":"flickr"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(132, 131, 131)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"52px",
+            "height":"16px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"1289px",
+            "left":"642px"
+         },
+         "properties":{
+            "href":"http://www.netvibes.com/transmediale"
+         },
+         "type":"link",
+         "text":"netvibes"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(132, 131, 131)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"38px",
+            "height":"16px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"1308px",
+            "left":"642px"
+         },
+         "properties":{
+            "href":"http://vimeo.com/transmediale"
+         },
+         "type":"link",
+         "text":"vimeo"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"bold",
+            "color":"rgb(132, 131, 131)",
+            "letter-spacing":"normal",
+            "text-align":"left",
+            "width":"27px",
+            "height":"16px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"1327px",
+            "left":"642px"
+         },
+         "properties":{
+            "href":"http://www.transmediale.de/global-rss"
+         },
+         "type":"link",
+         "text":"RSS"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "width":"220px",
+            "height":"42px",
+            "float":"none",
+            "display":"block",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"1202px",
+            "left":"882px"
+         },
+         "properties":{
+
+         },
+         "type":"text",
+         "text":"<img src=\"http://www.transmediale.de/files/web/logos-sponsoren.png\" alt=\"Main sponsors\" width=\"220px\" style=\"font-size: 13px; font-family: arial, verdana, helvetica, sans-serif; font-weight: normal; color: rgb(0, 0, 0); letter-spacing: normal; width: 220px; height: 37px; float: none; display: inline; position: static; background-color: rgba(0, 0, 0, 0); background-image: none; background-repeat: repeat; background-position: 0% 0%; background-attachment: scroll;\">"
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "width":"220px",
+            "height":"37px",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"1202px",
+            "left":"882px"
+         },
+         "properties":{
+            "src":"http://www.transmediale.de/files/web/logos-sponsoren.png"
+         },
+         "type":"image",
+         "text":""
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "text-align":"center",
+            "float":"none",
+            "display":"inline",
+            "position":"static",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "top":"0px",
+            "left":"0px"
+         },
+         "properties":{
+            "src":"http://www.transmediale.de/festival"
+         },
+         "type":"image",
+         "text":""
+      },
+      {
+         "style":{
+            "font-size":"13px",
+            "font-family":"arial, verdana, helvetica, sans-serif",
+            "font-weight":"normal",
+            "color":"rgb(0, 0, 0)",
+            "letter-spacing":"normal",
+            "width":"104px",
+            "height":"113px",
+            "top":"40px",
+            "right":"10%",
+            "float":"none",
+            "display":"block",
+            "position":"absolute",
+            "z-index":"999999",
+            "background-color":"rgba(0, 0, 0, 0)",
+            "background-image":"none",
+            "background-repeat":"repeat",
+            "background-position":"0% 0%",
+            "background-attachment":"scroll",
+            "left":"1035px"
+         },
+         "properties":{
+            "src":"https://github.com/mvhenten/hotglue2/raw/master/img/hotglue-logo.png"
+         },
+         "type":"image",
+         "text":""
+      }
+   ]
+}

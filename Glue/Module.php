@@ -14,8 +14,8 @@ use Glue\CSS;
 require_once dirname(__FILE__) . '/CSS.php';
 
 abstract class Module {
-    protected $_module     = null;
-    protected $_type       = null;
+    protected $_module     = 'text';
+    protected $_type       = 'text';
     protected $_element    = null;
     protected $_css        = null;
     protected $_mapping    = null;

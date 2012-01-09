@@ -109,7 +109,9 @@ abstract class Module {
 
     protected function _build__content() {
         if( isset( $this->_element->text ) ){
-            return str_replace( "\n", '', $this->_element->text );
+            $text = $this->_element->text;
+            $text = strip_tags($text, '<a><i><b><u><strong><em><img><br>');
+            return str_replace( "\n", '', $text );
         }
     }
 

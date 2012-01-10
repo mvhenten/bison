@@ -15,6 +15,7 @@ require_once dirname(__FILE__) . '/Module/Image.php';
 require_once dirname(__FILE__) . '/Module/Link.php';
 require_once dirname(__FILE__) . '/Module/Text.php';
 
+use Glue\Util;
 use Glue\Util\Base;
 use Glue\Module\Page;
 use Glue\Module\Image;
@@ -32,7 +33,7 @@ class App extends Base {
     protected $_basenum;
 
     /**
-     *
+     * Constructor required at leas a base path and json
      *
      * @param unknown $path
      * @param unknown $json
@@ -44,21 +45,23 @@ class App extends Base {
 
 
     /**
+     * Write hotglue project to disk
      *
      */
     public function write() {
         mkdir( $this->pagepath );
+        mkdir( $this->path . '/shared' );
 
-        file_put_contents( $this->_getFileName('page'), (string) $this->page );
+        $this->_putFileContents( $this->page, 'page' );
 
         foreach ( $this->elements as $item ) {
-            file_put_contents( $this->_getFileName(), (string) $item );
+            $this->_putFileContents( $item );
         }
     }
 
 
     /**
-     *
+     * Builder: return module instances for all elements in the json object
      *
      * @return unknown
      */
@@ -74,7 +77,8 @@ class App extends Base {
 
 
     /**
-     *
+     * Builder: returns a number (current microtime * 1000 ) to use
+     * in Hotglue path defs
      *
      * @return unknown
      */
@@ -84,9 +88,9 @@ class App extends Base {
 
 
     /**
+     * Builder: returns a Glue\Module\Page instance
      *
-     *
-     * @return unknown
+     * @return Page $page
      */
     protected function _build__page() {
         return new Page( null, $this->_json );
@@ -94,9 +98,9 @@ class App extends Base {
 
 
     /**
+     * Builder: returns a "sanitized" page name to use as path
      *
-     *
-     * @return unknown
+     * @return string $path
      */
     protected function _build__pagepath() {
         $path = preg_replace( '/\W+/', '', $this->_json->title );
@@ -109,11 +113,66 @@ class App extends Base {
     }
 
 
+
     /**
      *
      *
+     * @param unknown $item
      * @param unknown $name (optional)
-     * @return unknown
+     */
+    private function _putFileContents( $item, $name = null ) {
+        $path = $this->_getFileName( $name );
+
+        if ( $item->file ) {
+            $this->_moveImageFile( $item->file );
+        }
+
+        if ( false === file_put_contents( $path, (string) $item ) ) {
+            die("cannot write to $path");
+        }
+
+        if ( $item->file ) {
+            // unlink( $item->file->path );
+        }
+    }
+
+
+
+    /**
+     *
+     *
+     * @param unknown $file
+     */
+    private function _moveImageFile( $file ) {
+        $path = $this->path . '/shared/' . $file->basename;
+
+        if ( file_exists( $path ) ) {
+            if ( md5_file( $path ) != md5_file( $file->path ) ) {
+                $tries = 0;
+
+                while ( file_exists($path) ) {
+                    $tries++;
+
+                    @list( $filename, $ext ) = slice( pathinfo($file->path), qw('filename extension'));
+                    $path = sprintf('%s/shared/%s_%04d.%s', $this->path, $filename, $tries, $ext );
+                }
+            }
+            else {
+                return;
+            }
+        }
+
+        rename( $file->path, $path );
+        $file->set_basename( basename($path) );
+    }
+
+
+    /**
+     * Hotglue filenames are based on unix timestamp;
+     * So we'll do too, and create a fully qualified filename to be
+     *
+     * @param unknown $name (optional) Optional name of the file
+     * @return fully qualified path
      */
     private function _getFileName( $name = null ) {
         if ( ! $name ) {
@@ -125,12 +184,13 @@ class App extends Base {
     }
 
 
+
     /**
+     * Returns an instance of $type
      *
-     *
-     * @param unknown $type
-     * @param unknown $element
-     * @return unknown
+     * @param string  $type
+     * @param object  $element
+     * @return Glue\Module $type
      */
     private function _getModule( $type, $element ) {
         switch ( $type ) {

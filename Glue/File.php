@@ -45,15 +45,30 @@ class File {
     }
 
 
+
+    /**
+     *
+     *
+     * @param unknown $new_name
+     */
+    public function set_basename( $new_name ) {
+        $this->_basename = $new_name;
+    }
+
+
     /**
      *
      *
      * @return unknown
      */
     protected function _build__info() {
-        $info = getimagesize( $this->path );
+        $info = array();
 
-        list($width, $height, $type, $attr) = $info;
+        if ( false !== $this->path ) {
+            $info = getimagesize( $this->path );
+        }
+
+        @list($width, $height, $type, $attr) = $info;
 
         return (object) array(
             'width'     => $width,
@@ -69,16 +84,21 @@ class File {
      * @return unknown
      */
     protected function _build__path() {
+        $tmp_name = tempnam( sys_get_temp_dir(), 'glue_');
+        $file_src = $this->_file_src;
+        $contents = file_get_contents( $file_src );
 
-        /**
-         *
-         *
-         * @TODO file should be moved to
-         * CONTENT_PATH or something intelligent
-         */
-        $tmp_name = tempnam('/tmp', 'glue_');
+        if ( false === $contents ) {
+            trigger_error( 'cannot read ' . $this->_file_src );
+            return false;
+        }
 
-        file_put_contents( $tmp_name, file_get_contents( $this->_file_src ));
+        if ( false == file_put_contents( $tmp_name, $contents ) ) {
+            trigger_error( 'cannot write to ' . $tmp_name );
+            return false;
+        }
+
+        print "WROTE TO $tmp_name \n";
 
         return $tmp_name;
     }

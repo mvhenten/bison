@@ -74,7 +74,11 @@ class Page extends Module {
      * @return unknown
      */
     protected function _build__file() {
-        if ( ( $src = $this->style('background-image') ) && isset($src) ) {
+        $src = $this->style('background-image');
+
+        if ( isset($src) && preg_match( '/url\((.+?)\)/', $src, $match ) ) {
+            list( , $src ) = $match;
+
             return new file( $src );
         }
     }

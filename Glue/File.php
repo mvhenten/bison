@@ -2,6 +2,8 @@
 /**
  * Glue/File.php
  *
+ * Contains logic needed to retrieve ( remote) files for Bison
+ *
  * @author Matthijs van Henten <matthijs@ischen.nl>
  * @package Bison
  */
@@ -19,10 +21,10 @@ class File {
     protected $_source;
 
     /**
+     * Class constructor
      *
-     *
-     * @param unknown $src
-     * @param unknown $cache (optional)
+     * @param str     $src   original source for the file
+     * @param bool    $cache (optional) use local file caching
      */
     public function __construct( $src, $cache = true ) {
         $this->_file_src        = $src;
@@ -31,10 +33,10 @@ class File {
 
 
     /**
+     * Auto getter. Triggers a _build_$name function once.
      *
-     *
-     * @param unknown $name
-     * @return unknown
+     * @param str     $name
+     * @return mixed
      */
     public function __get( $name ) {
         if ( ($property = "_$name")
@@ -50,9 +52,9 @@ class File {
 
 
     /**
+     * Move the file to a new location
      *
-     *
-     * @param unknown $dest
+     * @param string  $dest Path to move the file to
      */
     public function move( $dest ) {
         rename( $this->path, $dest );
@@ -63,17 +65,7 @@ class File {
 
 
     /**
-     *
-     *
-     * @param unknown $new_name
-     */
-    public function set_basename( $new_name ) {
-        $this->_basename = $new_name;
-    }
-
-
-    /**
-     *
+     * lazy builder
      *
      * @return unknown
      */
@@ -95,7 +87,8 @@ class File {
 
 
     /**
-     *
+     * Lazy builder - retrieves file contents from the original (remote)
+     * source and copies it to a temp file.
      *
      * @return unknown
      */
@@ -105,12 +98,12 @@ class File {
         $contents = file_get_contents( $file_src );
 
         if ( false === $contents ) {
-            trigger_error( 'cannot read ' . $this->_file_src );
+            trigger_error( 'cannot read ' . $this->_file_src, E_USER_ERROR );
             return false;
         }
 
         if ( false == file_put_contents( $tmp_name, $contents ) ) {
-            trigger_error( 'cannot write to ' . $tmp_name );
+            trigger_error( 'cannot write to ' . $tmp_name, E_USER_ERROR );
             return false;
         }
 
@@ -121,7 +114,8 @@ class File {
 
 
     /**
-     *
+     * Lazy builder - this is a wrapper around the original source, implementing
+     * a local file cache wich is faster then retrieving remotely.
      *
      * @return unknown
      */
@@ -142,30 +136,28 @@ class File {
             $content = file_get_contents( $this->_file_src );
 
             if ( false === $content ) {
-                trigger_error( 'cannot read from ' . $this->_file_src );
+                trigger_error( 'cannot read from ' . $this->_file_src, E_USER_ERROR );
                 return;
             }
 
             $bytes = file_put_contents( $path, $content );
 
             if ( false === $bytes ) {
-                trigger_error( 'unable to read/write to cache ' . $path );
+                trigger_error( 'unable to read/write to cache ' . $path, E_USER_ERROR );
                 return;
             }
             if ( 0 == $bytes ) {
-                trigger_error( 'zero bytes written to ' . $path );
+                trigger_error( 'zero bytes written to ' . $path, E_USER_ERROR );
                 unlink($path);
             }
         }
-
-        echo "RETRIEVING FROM CACHE: " . $path;
 
         return $path;
     }
 
 
     /**
-     *
+     * lazy builder - returns basename of the orignal file.
      *
      * @return unknown
      */

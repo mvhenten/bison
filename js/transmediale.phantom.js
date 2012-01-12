@@ -1,24 +1,37 @@
-var domain = 'tm12.hotglue.org/hotglue2/tm/js';
-var include = [
-    'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
-    'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js',
-    'http://' + domain + '/inline.plugin.js',
-    'http://' + domain + '/json2.min.js',
-    'http://' + domain + '/glue.js',
-];
-
+var fs = require('fs');
 
 var page = new WebPage(),
-    url = 'http://www.transmediale.de';
+    url         = phantom.args[0],
+    outputFile  = phantom.args[1];
 
+page.onConsoleMessage = function (msg) {
+    console.log(msg);
+};
 
 page.open(url, function (status) {
     if (status !== 'success') {
         console.log('Unable to access network');
     }
     else {
-        for( var i = 0, len = include.lenth; i < len; i++ ){
-            page.injextJs(include[i]);
+        var script_includes = [
+            'vendor/jquery.js',
+            'vendor/jquery-ui.js',
+            'vendor/inline.plugin.js',
+            'vendor/json2.js',
+            'glue.js',
+        ];
+
+        for ( var i = 0, len = script_includes.length; i < len; i++ ){
+            page.injectJs(script_includes[i]);
+            console.log(script_includes[i]);
         }
+
+
+        var json = page.evaluate(function(){
+            return glue_me.go();
+        });
+
+        fs.write( outputFile, json, 'w' );
     }
+    phantom.exit();
 });

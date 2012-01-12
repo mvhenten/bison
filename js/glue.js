@@ -1,7 +1,7 @@
 var glue_me = (function(){
     //var selectors = 'a:visible,img,p,h1,h2,h3,h4,h5,#festival-menu-1';
     var selectors = 'img,a:visible,p,.festival-col, .view-content, #sidebar-right';
-    var target    = 'http://hotglue2.localhost/tm-glue.php';
+    //var target    = 'http://hotglue2.localhost/tm-glue.php';
 
     // strip html comments, they should not end up in hotglue
     $('*').contents().each(function() {
@@ -11,28 +11,31 @@ var glue_me = (function(){
     });
 
 
-    $(document.body).append(
-        $('<img onclick="glue_me.go()" id="glueme" '
-          +'src="https://github.com/mvhenten/hotglue2/raw/master/img/hotglue-logo.png" '
-          + 'style="position:absolute; top:10%; right:10%; z-index:999999; cursor:pointer; " '
-          +'alt="hotglue me">').hide()
-    );
-
-    $('#glueme').draggable().fadeIn(1000);
+    //$(document.body).append(
+    //    $('<img onclick="glue_me.go()" id="glueme" '
+    //      +'src="https://github.com/mvhenten/hotglue2/raw/master/img/hotglue-logo.png" '
+    //      + 'style="position:absolute; top:10%; right:10%; z-index:999999; cursor:pointer; " '
+    //      +'alt="hotglue me">').hide()
+    //);
+    //
+    //$('#glueme').draggable().fadeIn(1000);
 
     return {
         go: function(){
+
             var page = {
                 title: $('title').text(),
                 style: $('body').collectCSS()[0].style,
                 elements: this.collect()
             }
 
-            console.log(page);
+            return JSON.stringify(page);
 
-            $.post(target, {data: JSON.stringify(page)}, function(data){
-                console.log(data);
-            });
+            //console.log(JSON.stringify(page));
+
+            //$.post(target, {data: JSON.stringify(page)}, function(data){
+            //    console.log(data);
+            //});
         },
 
         collect: function(){

@@ -7,7 +7,7 @@ For Ubuntu 10.04 (lucid) see below.
     qmake-qt4 && make
     sudo cp phantomjs /usr/local/bin/
 
-( taken from [http://code.google.com/p/phantomjs/wiki/BuildInstructions])
+( taken from http://code.google.com/p/phantomjs/wiki/BuildInstructions)
 
 ## getting libqtwebkit-dev on 10.04 (supported on later versions)
 
@@ -28,4 +28,9 @@ start xvfb:
 
     Xvfb :1 -screen 0 1024x768x24
 
-see [http://code.google.com/p/phantomjs/wiki/XvfbSetup] for setting up deamon.
+see http://code.google.com/p/phantomjs/wiki/XvfbSetup for setting up deamon.
+
+## scrape css & render dir
+
+    phantomjs js/transmediale.phantom.js http://www.transmediale.de/resource tm-resource.json
+    php scripts/bison-cli.php tm-resource.json

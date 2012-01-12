@@ -144,6 +144,7 @@ class App extends Base {
      * @param unknown $file
      */
     private function _moveImageFile( $file ) {
+
         $path = $this->path . '/shared/' . $file->basename;
 
         if ( file_exists( $path ) ) {
@@ -161,9 +162,12 @@ class App extends Base {
                 return;
             }
         }
+        //
+        //rename( $file->path, $path );
 
-        rename( $file->path, $path );
-        $file->set_basename( basename($path) );
+        $file->move( $path );
+        //$file->set_basename( basename($path) );
+
     }
 
 

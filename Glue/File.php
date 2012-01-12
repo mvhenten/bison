@@ -11,18 +11,22 @@ namespace Glue;
 
 class File {
     private $_file_src;
+    private $_use_cache_dir = true;
 
     protected $_info;
     protected $_path;
     protected $_basename;
+    protected $_source;
 
     /**
      *
      *
      * @param unknown $src
+     * @param unknown $cache (optional)
      */
-    public function __construct( $src ) {
-        $this->_file_src = $src;
+    public function __construct( $src, $cache = true ) {
+        $this->_file_src        = $src;
+        $this->_use_cache_dir   = $cache;
     }
 
 
@@ -44,6 +48,18 @@ class File {
         }
     }
 
+
+    /**
+     *
+     *
+     * @param unknown $dest
+     */
+    public function move( $dest ) {
+        rename( $this->path, $dest );
+
+        $this->_path     = $dest;
+        $this->_basename = basename($dest);
+    }
 
 
     /**
@@ -85,7 +101,7 @@ class File {
      */
     protected function _build__path() {
         $tmp_name = tempnam( sys_get_temp_dir(), 'glue_');
-        $file_src = $this->_file_src;
+        $file_src = $this->source;
         $contents = file_get_contents( $file_src );
 
         if ( false === $contents ) {
@@ -101,6 +117,50 @@ class File {
         print "WROTE TO $tmp_name \n";
 
         return $tmp_name;
+    }
+
+
+    /**
+     *
+     *
+     * @return unknown
+     */
+    protected function _build__source() {
+        if ( ! $this->_use_cache_dir ) {
+            return $this->_file_src;
+        }
+
+        $cache_dir = sys_get_temp_dir() . '/.bison-file-cache/';
+        $md5hash   = md5( $this->_file_src );
+        $path = $cache_dir . $md5hash;
+
+        if ( ! file_exists( $path ) ) {
+            if ( ! is_dir( $cache_dir ) ) {
+                mkdir( $cache_dir );
+            }
+
+            $content = file_get_contents( $this->_file_src );
+
+            if ( false === $content ) {
+                trigger_error( 'cannot read from ' . $this->_file_src );
+                return;
+            }
+
+            $bytes = file_put_contents( $path, $content );
+
+            if ( false === $bytes ) {
+                trigger_error( 'unable to read/write to cache ' . $path );
+                return;
+            }
+            if ( 0 == $bytes ) {
+                trigger_error( 'zero bytes written to ' . $path );
+                unlink($path);
+            }
+        }
+
+        echo "RETRIEVING FROM CACHE: " . $path;
+
+        return $path;
     }
 
 

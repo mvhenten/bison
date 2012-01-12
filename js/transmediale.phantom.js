@@ -26,7 +26,6 @@ page.open(url, function (status) {
             console.log(script_includes[i]);
         }
 
-
         var json = page.evaluate(function(){
             return glue_me.go();
         });

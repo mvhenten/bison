@@ -1,4 +1,12 @@
 <?php
+/**
+ * scripts/create-hotglue.php
+ *
+ * @author Matthijs van Henten <matthijs@ischen.nl>
+ * @package Bison
+ */
+
+
 define( 'G_BASE_DIR', dirname(__FILE__) . '/../' );
 
 require_once G_BASE_DIR . 'Glue/Util.php';
@@ -9,9 +17,11 @@ use Glue\Create;
 
 @list( $script, $target ) = $argv;
 
-if( !@is_dir( $target ) ){
+if ( !@is_dir( $target ) ) {
     mkdir( $target );
 }
 
 $creator = new Create( realpath($target) );
 $creator->create();
+
+echo "DONE\n";

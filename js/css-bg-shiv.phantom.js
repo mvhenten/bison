@@ -18,9 +18,7 @@ var json = page.open(url, function (status) {
         var script_includes = [
             'vendor/jquery.js',
             'vendor/jquery-ui.js',
-            'vendor/inline.plugin.js',
             'vendor/json2.js',
-            'glue.js'
         ];
 
         for ( var i = 0, len = script_includes.length; i < len; i++ ){

@@ -50,7 +50,8 @@ class App extends Base {
      */
     public function write() {
         mkdir( $this->pagepath );
-        mkdir( $this->path . '/shared' );
+        mkdir( $this->pagepath . '/shared' );
+        mkdir( $this->pagepath . '/head' );
 
         $this->_putFileContents( $this->page, 'page' );
 
@@ -145,7 +146,7 @@ class App extends Base {
      */
     private function _moveImageFile( $file ) {
 
-        $path = $this->path . '/shared/' . $file->basename;
+        $path = $this->pagepath . '/shared/' . $file->basename;
 
         if ( file_exists( $path ) ) {
             if ( md5_file( $path ) != md5_file( $file->path ) ) {
@@ -184,7 +185,7 @@ class App extends Base {
             $this->_basenum++;
         }
 
-        return $this->pagepath . '/' . $name;
+        return $this->pagepath . '/head/' . $name;
     }
 
 

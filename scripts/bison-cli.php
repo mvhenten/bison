@@ -42,7 +42,7 @@ if ( ! $json ) {
 elseif ( !$out || !file_exists($out) ) {
     $usage();
 
-    $tempfile = tempnam( dirname(__FILE__), 'hotglue-' );
+    $tempfile = tempnam( getcwd(), 'hotglue-' );
 
     echo "no target given, writing to $tempfile\n";
 

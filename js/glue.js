@@ -1,24 +1,12 @@
-var glue_me = (function(){
-    //var selectors = 'a:visible,img,p,h1,h2,h3,h4,h5,#festival-menu-1';
-    var selectors = 'img,a:visible,p,.festival-col, .view-content, #sidebar-right';
-    //var target    = 'http://hotglue2.localhost/tm-glue.php';
+"use strict";
+var glue_me = ( function () {
+    var selectors = 'img,a:visible,p,h1,.festival-col, .view-content, #sidebar-right';
 
-    // strip html comments, they should not end up in hotglue
     $('*').contents().each(function() {
         if(this.nodeType == 8) {
-            $(this).remove()
+            $(this).remove();
         }
     });
-
-
-    //$(document.body).append(
-    //    $('<img onclick="glue_me.go()" id="glueme" '
-    //      +'src="https://github.com/mvhenten/hotglue2/raw/master/img/hotglue-logo.png" '
-    //      + 'style="position:absolute; top:10%; right:10%; z-index:999999; cursor:pointer; " '
-    //      +'alt="hotglue me">').hide()
-    //);
-    //
-    //$('#glueme').draggable().fadeIn(1000);
 
     return {
         go: function(){
@@ -27,54 +15,72 @@ var glue_me = (function(){
                 title: $('title').text(),
                 style: $('body').collectCSS()[0].style,
                 elements: this.collect()
-            }
+            };
 
             return JSON.stringify(page);
+        },
+        
+        processCollect: function( obj, collector ){
+            var offset = $(obj.element).offset();
 
-            //console.log(JSON.stringify(page));
+            obj.style.top  = offset.top + 'px';
+            obj.style.left = offset.left + 'px';
+            obj.properties = {};
 
-            //$.post(target, {data: JSON.stringify(page)}, function(data){
-            //    console.log(data);
-            //});
+            switch( obj.element.tagName.toLowerCase() ){
+                case 'img':
+                    obj.properties.src  = obj.element.src;
+                    obj.type = 'image';
+                    obj.text = '';
+                    break;
+                case 'a':
+                    obj.properties.href = obj.element.href;
+                    obj.type = 'link';
+                    obj.text = $(obj.element).text();
+                    break;
+                default:
+                    if( obj.style['background-image'] != 'none' ){
+                        try {
+                            var src = obj.style['background-image'];
+                            console.log(src);
+                            src = /url\((.+?)\)/.exec(src)[1];
+                            
+                            var objCopy = {
+                                type: 'image',
+                                text: '',
+                                stle: obj.style,
+                                properties: {
+                                    src: src
+                                }
+                            }
+                                                        
+                            collect.push(objCopy);                            
+                        }
+                        catch(e){
+                            console.log(e);
+                        }
+                    }                    
+                    
+                    //$(obj.element).find('*').inlineCSS();
+                    var clone = $(obj.element).clone();
+
+                    $(clone).find('a,img,p').remove();
+                    obj.text = $(clone).html();
+                    obj.type = 'text';
+                    break;
+            }
+
+            delete(obj.element);
+            collector.push(obj);
         },
 
         collect: function(){
             this.sanitizeImages();
+            var collect = [];
+            var self    = this;
 
-            var collect = $( $(selectors).collectCSS() ).map(function(i, obj ){
-                var offset = $(obj.element).offset();
-
-                obj.style.top  = offset.top + 'px';
-                obj.style.left = offset.left + 'px';
-                obj.properties = {};
-
-                switch( obj.element.tagName.toLowerCase() ){
-                    case 'img':
-                        obj.properties.src  = obj.element.src;
-                        obj.type = 'image';
-                        obj.text = '';
-                        break;
-                    case 'a':
-                        obj.properties.href = obj.element.href;
-                        obj.type = 'link';
-                        obj.text = $(obj.element).text();
-                        break;
-                    case 'div':
-                        $(obj.element).find('*').inlineCSS();
-                        var clone = $(obj.element).clone();
-
-                        $(clone).find('a,img,p').remove();
-                        obj.text = $(clone).html();
-                        obj.type = 'text';
-                        break;
-                    default:
-                        $(obj.element).find('*').inlineCSS();
-                        obj.type = 'text';
-                        obj.text = $(obj.element).html();
-                }
-
-                delete(obj.element);
-                return obj;
+            $( $(selectors).collectCSS() ).each(function(i, obj ){
+                self.processCollect( obj, collect );
             });
 
             return $.makeArray(collect);
@@ -86,5 +92,5 @@ var glue_me = (function(){
                 $(el).attr('src', el.src );
             });
         }
-    }
+    };
 })();

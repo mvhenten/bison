@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>in/compatible | transmediale</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="files/ninesixty_favicon_1.gif" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="files/css/css_4629a4f5c568eea6a5e2ab7ce2cc5129.css" />
+  <!--[if IE]>
+    <link rel="stylesheet" href="/sites/www.transmediale.de/themes/ninesixty/styles/tm11/ekn-ie.css" type="text/css">
+  <![endif]-->
+
+  <script type="text/javascript" src="files/js/js_f9d3b7f3a2ea48f6d4adfc60022d894f.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "lightbox2": { "rtl": "0", "file_path": "/(\\w\\w/)files", "default_image": "/sites/all/modules/lightbox2/images/brokenimage.jpg", "border_size": 10, "font_color": "000", "box_color": "fff", "top_position": "", "overlay_opacity": "0.8", "overlay_color": "000", "disable_close_click": true, "resize_sequence": 0, "resize_speed": 400, "fade_in_speed": 400, "slide_down_speed": 600, "use_alt_layout": false, "disable_resize": false, "disable_zoom": false, "force_show_nav": false, "show_caption": true, "loop_items": false, "node_link_text": "View Image Details", "node_link_target": false, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "original", "image_node_sizes": "()", "trigger_lightbox_classes": "", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": 0, "custom_trigger_classes": "", "disable_for_gallery_lists": true, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": true, "slideshow_automatic_exit": true, "show_play_pause": true, "pause_on_next_click": false, "pause_on_previous_click": true, "loop_slides": false, "iframe_width": 600, "iframe_height": 400, "iframe_border": 1, "enable_video": false }, "views": { "ajax_path": "/views/ajax", "ajaxViews": [ { "view_name": "festival_content", "view_display_id": "page_1", "view_args": "", "view_path": "festival/theme", "view_base_path": "festival/theme", "view_dom_id": 1, "pager_element": 0 } ] }, "langDropdown": { "jsWidget": { "visibleRows": "5", "rowHeight": "23", "animStyle": "slideDown" } } });
+//--><!]]>
+</script>
+  <link href='http://fonts.googleapis.com/css?family=Metrophobic' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="not-front not-logged-in page-festival one-sidebar sidebar-right i18n i18n-en anonymous_user url-festival-theme sec-festival Xshow-grid">
+  <div id="page" class="container-12 clear-block">
+
+    <div id="site-header" class="clear-block">
+      <div id="branding" class="grid-3 clear-block">
+                        </div>
+
+    
+        </div>
+
+
+    <div id="site-subheader" class="Xprefix-1 Xsuffix-1 clear-block">
+    
+          <div id="header-region" class="region grid-12 clear-block">
+        <div id="block-block-218" class="block block-block">
+
+  <div class="content">
+    <a href="http://www.transmediale.de/"><img src="sites/localsite/themes/ninesixty/styles/tm12/webfiles/tm.png" alt="tm logo" title="Go back to transmediale portal"></a>  </div>
+</div>
+<div id="block-lang_dropdown-0" class="block block-lang_dropdown">
+
+  <div class="content">
+    <form action="tm2k12"  accept-charset="UTF-8" method="post" id="lang-dropdown-form">
+<div><div class="form-item" id="edit-lang-dropdown-select-wrapper">
+ <select name="lang_dropdown_select" style="width:140px" class="form-select" id="edit-lang-dropdown-select" ><option value="http://www.transmediale.de/de/tm2k12">deutsch</option><option value="http://www.transmediale.de/tm2k12" selected="selected">english</option></select>
+</div>
+<noscript><span>
+<input type="submit" name="op" id="edit-submit" value="Go"  class="form-submit" />
+
+</span></noscript><input type="hidden" name="form_build_id" id="form-b22a98cacd705a4b517a97ea70f65c91" value="form-b22a98cacd705a4b517a97ea70f65c91"  />
+<input type="hidden" name="form_id" id="edit-lang-dropdown-form" value="lang_dropdown_form"  />
+
+</div></form>
+  </div>
+</div>
+<div id="block-search-0" class="block block-search">
+
+  <div class="content">
+    <form action="tm2k12"  accept-charset="UTF-8" method="post" id="search-block-form">
+<div><div class="container-inline">
+  <div class="form-item" id="edit-search-block-form-1-wrapper">
+ <label for="edit-search-block-form-1">Search this site: </label>
+ <input type="text" maxlength="128" name="search_block_form" id="edit-search-block-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-submit-1" value="Search"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-eec5f9263274462705645473a07b213e" value="form-eec5f9263274462705645473a07b213e"  />
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form"  />
+</div>
+
+</div></form>
+  </div>
+</div>
+<div id="block-menu-menu-topmenu" class="block block-menu">
+
+  <div class="content">
+    <ul class="menu"><li class="leaf first link-about"><a href="http://www.transmediale.de/about" title="">About</a></li>
+<li class="leaf link-press"><a href="http://www.transmediale.de/press" title="">Press</a></li>
+<li class="leaf last link-newsletter-signup"><a href="http://www.transmediale.de/newsletter-signup" title="">Newsletter</a></li>
+</ul>  </div>
+</div>
+<div id="block-block-121" class="block block-block">
+
+  <div class="content">
+    <script>
+function switchLoginForm() {
+  if (document.getElementById("customLoginForm").style.display != "block") {
+    document.getElementById("customLoginForm").style.display = "block";
+  } else {
+    document.getElementById("customLoginForm").style.display = "none";
+  }
+}
+</script>
+         <a href="http://www.transmediale.de/user" id="link_login" onClick="switchLoginForm(); return false;">Login</a> 
+         /
+         <a href="http://www.transmediale.de/register">Create new account</a><div id="customLoginForm" style="display: none"><form action="http://www.transmediale.de/tm2k12?destination=festival%2Ftheme"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit-2" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first"><a href="http://www.transmediale.de/register" title="Create a new user account.">Create new account</a></li>
+<li class="last"><a href="http://www.transmediale.de/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-00b6b1a1c46f17dc44468e8a9199e33a" value="form-00b6b1a1c46f17dc44468e8a9199e33a"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+<div style="clear: both"></div>  </div>
+</div>
+<div id="block-block-219" class="block block-block">
+
+  <div class="content">
+    <div class="festival-col" id="festival-col1">
+  <div class="festivalmenuhead"><h2><a href="tm2k12" class="active">transmediale 2K+12</a></h2></div>
+    <div class="festival-menu" id="festival-menu-1">
+  <h3>in/compatible</h3><ul class="menu"><li class="collapsed first active-trail link-tm2k12"><a href="tm2k12" title="" class="active">in/compatible</a></li>
+<li class="leaf link"><a class="nolink">dark drives [exhibition]</a></li>
+<li class="leaf link"><a class="nolink">in/compatible symposium [conference]</a></li>
+<li class="leaf link"><a class="nolink">satellite stories [video]</a></li>
+<li class="leaf link"><a class="nolink">reSource [talks, workshops, presentations]</a></li>
+<li class="leaf link"><a class="nolink">the ghosts in the machine [performance]</a></li>
+<li class="leaf link"><a class="nolink">25 years</a></li>
+<li class="leaf last link"><a class="nolink">vorspiel [pre-festival programme]</a></li>
+</ul>  </div>
+</div>
+
+<div class="festival-col" id="festival-col2">
+  <div class="festivalmenuhead"><h2><a href="tm2k12" class="active">in/compatible</a></h2></div> 
+</div>
+
+<div class="festival-col" id="festival-col3">
+  <div class="festivalmenuhead"><h2><a href="tm2k12" class="active">31/01 - 05/02 2012</a></h2></div>
+   <div class="festival-menu" id="festival-menu-2">
+  <h3>Programme</h3><ul class="menu"><li class="leaf first link"><a class="nolink">festival locations</a></li>
+<li class="leaf last link"><a class="nolink">festival schedule</a></li>
+</ul>  </div>
+  
+    <div class="festival-menu" id="festival-menu-3">
+  <h3>Service</h3><ul class="menu"><li class="leaf first link-festival-tickets"><a href="http://www.transmediale.de/festival/tickets" title="">tickets</a></li>
+<li class="leaf link-festival-professionals-accreditation"><a href="http://www.transmediale.de/festival/professionals-accreditation" title="">professional accreditation</a></li>
+<li class="leaf link-festival-service"><a href="http://www.transmediale.de/festival/service" title="">service</a></li>
+<li class="leaf last link-festival-supporters"><a href="http://www.transmediale.de/festival/supporters" title="">supporters</a></li>
+</ul>  </div>
+</div>  </div>
+</div>
+      </div>
+        </div>
+
+    <div id="rapper" class="clear-block">
+		<div id="main" class="column grid-main grid-8 ">
+		  <div class="breadcrumb"><a href="http://www.transmediale.de/">Home</a></div>		  		  			<h1 class="title" id="page-title">in/compatible</h1>
+		  		  		  		  		  
+		  <div id="main-content" class="region clear-block">
+			<div class="view view-festival-content view-id-festival_content view-display-id-page_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="buildmode-ds_teser_festival">
+  <div class="node node-type-festival  clear-block">
+    <div class="nd-region-middle-wrapper  nd-no-sidebars" ><div class="nd-region-middle"><div class="cloud">
+
+<div class="field field-type-filefield field-field-festival-image">
+    <div class="field-items">
+            <div class="field-item odd first">
+                    <a href="http://www.transmediale.de/content/transmediale-2012-programme-overview" class="imagecache imagecache-tm_small imagecache-linked imagecache-tm_small_linked"><img src="files/imagecache/tm_small/twins.jpg" alt="20010 by Giordano Matteo, video © Giordano Matteo 2011 | film still" title="20010 by Giordano Matteo, video © Giordano Matteo 2011 | film still"  class="imagecache imagecache-tm_small" width="160" height="122" /></a>        </div>
+                <div class="field-item even further">
+                        <a href="http://www.transmediale.de/content/transmediale-2012-programme-overview" class="imagecache imagecache-tm_small imagecache-linked imagecache-tm_small_linked"><img src="files/imagecache/tm_small/twins.jpg" alt="20010 by Giordano Matteo, video © Giordano Matteo 2011 | film still" title="20010 by Giordano Matteo, video © Giordano Matteo 2011 | film still"  class="imagecache imagecache-tm_small" width="160" height="122" /></a>          </div>
+                  <div class="field-item odd further">
+                        <a href="http://www.transmediale.de/content/transmediale-2012-programme-overview" class="imagecache imagecache-tm_small imagecache-linked imagecache-tm_small_linked"><img src="files/imagecache/tm_small/twins.jpg" alt="20010 by Giordano Matteo, video © Giordano Matteo 2011 | film still" title="20010 by Giordano Matteo, video © Giordano Matteo 2011 | film still"  class="imagecache imagecache-tm_small" width="160" height="122" /></a>          </div>
+          </div>
+</div>
+
+</div>
+<div class="field field-title"><h1><a href="http://www.transmediale.de/content/transmediale-2012-programme-overview">transmediale 2012 Programme Overview</a></h1></div><div class="field field-festival-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p><strong>transmediale 2012</strong> is an in/compatible being. Incompatibility is the  condition that arises when things are not  working together. With  <strong>transmediale 2012</strong>, we are investigating the  productive and destructive  sides of incompatibility as a fundamental  condition for cultural  production in times of crisis. In this context  <strong>transmediale 2012</strong> calls  for a transversal approach. With our theme in/compatible   we are acknowledging that there is equally the need for creative hacks   and modifications, as there is a need for a refusal of the quick   re-integration into business as usual. <a href="http://www.transmediale.de/node/20271/">Read our programme overview</a>.</p>
+        </div>
+        </div>
+</div>
+<!-- slider for related content -->
+
+    <div id="panel-20271" class="relatedcontent" >
+<!-- field-field_event_feat_participants.tpl.php -->
+
+<!-- /field-field_event_feat_participants.tpl.php -->
+<!-- field-field_festival_feat_artwork.tpl.php -->
+
+<!-- /field-field_festival_feat_artwork.tpl.php --><!-- field-field_festival_related_event.tpl.php -->
+
+<!-- /field-field_festival_related_event.tpl.php -->
+<!-- field-field_festival_rel_content.tpl.php -->
+
+<!-- /field-field_festival_rel_content.tpl.php -->
+<!-- field-field_all_related_media.tpl.php -->
+<!-- /field-field_all_related_media.tpl.php -->
+</div>
+<!-- / slider for related content -->
+</div></div>  </div> <!-- /node -->
+</div> <!-- /buildmode -->
+  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+    
+<div class="buildmode-ds_teser_festival">
+  <div class="node node-type-festival  clear-block">
+    <div class="nd-region-middle-wrapper  nd-no-sidebars" ><div class="nd-region-middle"><div class="cloud">
+
+
+</div>
+<div class="field field-title"><h1><a href="http://www.transmediale.de/content/festival-outline">Festival Outline</a></h1></div><div class="field field-festival-teaser">
+    <div class="field-items">
+            <div class="field-item odd">
+                    <p>transmediale is preparing to get <strong>in/compatible</strong> in 2012. The theme in/compatible probes the artistic imagination that is developed in a network culture where everything seems to connect, but not all fits in or works together. Under this festival theme we will present a diverse international programme: a two-day thematic <strong>symposium</strong>, a curated <strong>exhibition</strong>, an extensive <strong>video programme</strong> and a <strong>performance</strong> series which includes the legendary <strong>Joshua Light Show</strong>. Another highlight is the launch of a new project platform, the <strong>reSource for transmedial culture</strong>, which will present itself through an experimental programme of workshops, open discussions and performative interventions. The occasion of the <strong>25th anniversary</strong> of transmediale will be marked by special screenings and panel discussions. On top of all this, we are partnering up with CTM for a festival <strong>Vorspiel</strong> consisting of partner events spread all over the city in the weekend immediately preceding our opening.</p>
+        </div>
+        </div>
+</div>
+<!-- slider for related content -->
+
+    <div id="panel-20260" class="relatedcontent" >
+<!-- field-field_event_feat_participants.tpl.php -->
+
+<!-- /field-field_event_feat_participants.tpl.php -->
+<!-- field-field_festival_feat_artwork.tpl.php -->
+
+<!-- /field-field_festival_feat_artwork.tpl.php --><!-- field-field_festival_related_event.tpl.php -->
+
+<!-- /field-field_festival_related_event.tpl.php -->
+<!-- field-field_festival_rel_content.tpl.php -->
+
+<!-- /field-field_festival_rel_content.tpl.php -->
+<!-- field-field_all_related_media.tpl.php -->
+<!-- /field-field_all_related_media.tpl.php -->
+</div>
+<!-- / slider for related content -->
+</div></div>  </div> <!-- /node -->
+</div> <!-- /buildmode -->
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> 		  </div>
+		
+		  		</div>
+		
+				
+				<div id="sidebar-right" class="column sidebar region grid-4 grid-rightcol">
+		  <div id="block-block-237" class="block block-block tix">
+
+  <div class="content">
+    <a href="http://www.transmediale.de/festival/tickets"><div class="goldtext">Buy Tickets<br>Now!</div></a>  </div>
+</div>
+<div id="block-block-238" class="block block-block imageblock">
+
+  <div class="content">
+    <div style="height: 202px;"><a href="http://www.transmediale.de/node/20253/"><img src="files/web/jls2.png" width="300px" border="0" /></a></div>
+<div class="goldheader"><a href="http://www.transmediale.de/node/20253/">Joshua Light Show</a></div>
+<div class="blue">The legendary, hypnotic and colourful 1960s <i>Joshua Light Show</i> will perform alongside contemporary musicians as part of transmediale 2012 and CTM.12, combining analogue with modern digital visual experimentation, presenting their analogue show in Europe for the first time since the 1960's.</div>
+  </div>
+</div>
+		</div>
+		  </div>
+
+  <div id="footer">
+          <div id="footer-region" class="region grid-12 clear-block">
+        <div id="block-block-214" class="block block-block">
+  <h2>Contact</h2>
+
+  <div class="content">
+    <p>transmediale office<br />
+Klosterstraße 68<br />
+D - 10179 Berlin<br />
+tel: +49 (0)30 24 749 761<br />
+fax: +49 (0)30 24 749 763<br />
+info[at]transmediale.de</p>
+  </div>
+</div>
+<div id="block-block-216" class="block block-block">
+  <h2>Imprint</h2>
+
+  <div class="content">
+    <p>Kulturprojekte Berlin GmbH<br />
+Geschäftsführung: Moritz van Dülmen<br /><br />
+AG Charlottenburg, HRB 41312<br />
+USt.-ID-Nr.: DE 137180214 | <a href="http://www.transmediale.de/about/imprint">more</a></p>
+  </div>
+</div>
+<div id="block-menu-menu-footer-menu" class="block block-menu">
+  <h2>Outreach</h2>
+
+  <div class="content">
+    <ul class="menu"><li class="leaf first linkhttp:--www.facebook.com-transmediale"><a href="http://www.facebook.com/transmediale" title="">facebook</a></li>
+<li class="leaf linkhttp:--twitter.com-transmediale"><a href="http://twitter.com/transmediale" title="">twitter</a></li>
+<li class="leaf linkhttp:--www.flickr.com-photos-transmediale"><a href="http://www.flickr.com/photos/transmediale" title="">flickr</a></li>
+<li class="leaf linkhttp:--www.netvibes.com-transmediale"><a href="http://www.netvibes.com/transmediale" title="">netvibes</a></li>
+<li class="leaf linkhttp:--vimeo.com-transmediale"><a href="http://vimeo.com/transmediale" title="">vimeo</a></li>
+<li class="leaf last link-global-rss"><a href="http://www.transmediale.de/global-rss" title="">RSS</a></li>
+</ul>  </div>
+</div>
+<div id="block-block-70" class="block block-block">
+
+  <div class="content">
+    <p><img src="files/web/logos-sponsoren.png" alt="Main sponsors" width="220px" /></p>
+  </div>
+</div>
+      </div>
+    
+          <div id="footer-message" class="grid-12">
+        &nbsp;      </div>
+      </div>
+
+
+  </div>
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-11841630-3"]);_gaq.push(["_gat._anonymizeIp"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+</body>
+</html>
+<!-- Page cached by Boost @ 2012-01-14 15:11:19, expires @ 2012-01-14 16:11:19 -->

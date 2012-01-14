@@ -1,0 +1,34 @@
+# make sure MultiViews is disabled
+Options -MultiViews
+
+RewriteEngine on
+
+# on some installations it might be necessary to explicitly set the base URL
+# if you have your hotglue installation on http://foo.com/bar this would be /bar
+# see README for details
+# RewriteBase /bar
+
+# this seems to be needed for authentication if php is working in cgi mode
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# shortcut for json
+RewriteRule ^json/?$ json.php [L]
+
+# redirect everything that is not a real file or directory towards index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?$1
+
+# disallow access to a bunch of static files
+<Files COPYING>
+	order deny,allow
+	deny from all
+</Files>
+<Files INSTALL>
+	order deny,allow
+	deny from all
+</Files>
+<Files README>
+	order deny,allow
+	deny from all
+</Files>

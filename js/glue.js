@@ -19,7 +19,7 @@ var glue_me = ( function () {
 
             return JSON.stringify(page);
         },
-        
+
         processCollect: function( obj, collector ){
             var offset = $(obj.element).offset();
 
@@ -44,23 +44,23 @@ var glue_me = ( function () {
                             var src = obj.style['background-image'];
                             console.log(src);
                             src = /url\((.+?)\)/.exec(src)[1];
-                            
+
                             var objCopy = {
                                 type: 'image',
                                 text: '',
-                                stle: obj.style,
+                                style: obj.style,
                                 properties: {
                                     src: src
                                 }
                             }
-                                                        
-                            collect.push(objCopy);                            
+
+                            collect.push(objCopy);
                         }
                         catch(e){
                             console.log(e);
                         }
-                    }                    
-                    
+                    }
+
                     //$(obj.element).find('*').inlineCSS();
                     var clone = $(obj.element).clone();
 

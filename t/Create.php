@@ -103,11 +103,11 @@ class Glue_Create extends PHPUnit_Framework_TestCase{
     /**
      * create must create actual files in an expected location
      */
-    public function testCreate() {
+    public function testRun() {
         $target = $this->_tmpdir();
 
         $create = new Create($target);
-        $create->create();
+        $create->run();
 
         foreach ( $create->source_files as $file ) {
             $this->assertFileExists( $target . '/' . $file );

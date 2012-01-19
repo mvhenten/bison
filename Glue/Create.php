@@ -46,7 +46,7 @@ class Create extends Base {
     /**
      *
      */
-    public function create() {
+    public function run() {
         $content_dir = $this->_targetPath( 'content' );
 
         if ( file_exists( $content_dir ) ) {

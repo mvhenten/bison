@@ -29,7 +29,6 @@ class App extends Base {
     protected $_elements  = null;
 
     protected $_page;
-    protected $_pagepath;
     protected $_basenum;
 
     /**
@@ -49,9 +48,8 @@ class App extends Base {
      *
      */
     public function write() {
-        mkdir( $this->pagepath );
-        mkdir( $this->pagepath . '/shared' );
-        mkdir( $this->pagepath . '/head' );
+        mkdir( $this->_path . '/shared', 0700, true );
+        mkdir( $this->_path . '/head', 0700, true);
 
         $this->_putFileContents( $this->page, 'page' );
 
@@ -99,23 +97,6 @@ class App extends Base {
 
 
     /**
-     * Builder: returns a "sanitized" page name to use as path
-     *
-     * @return string $path
-     */
-    protected function _build__pagepath() {
-        $path = preg_replace( '/\W+/', '', $this->_json->title );
-        $path = preg_replace( '/_+/', '-', $path );
-        $path = trim($path, '-');
-
-        $path = $this->_path . '/' . $path;
-
-        return $path;
-    }
-
-
-
-    /**
      *
      *
      * @param unknown $item
@@ -146,7 +127,7 @@ class App extends Base {
      */
     private function _moveImageFile( $file ) {
 
-        $path = $this->pagepath . '/shared/' . $file->basename;
+        $path = $this->_path . '/shared/' . $file->basename;
 
         if ( file_exists( $path ) ) {
             if ( md5_file( $path ) != md5_file( $file->path ) ) {
@@ -185,7 +166,7 @@ class App extends Base {
             $this->_basenum++;
         }
 
-        return $this->pagepath . '/head/' . $name;
+        return $this->_path . '/head/' . $name;
     }
 
 

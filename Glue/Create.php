@@ -23,7 +23,6 @@ class Create extends Base {
     private $_blacklist = array(
         '.',
         '..',
-        'index.php',
         'content',
         'htaccess-dist',
         '.htaccess',

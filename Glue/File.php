@@ -98,12 +98,12 @@ class File {
         $contents = file_get_contents( $file_src );
 
         if ( false === $contents ) {
-            trigger_error( 'cannot read ' . $this->_file_src, E_USER_ERROR );
+            trigger_error( 'cannot read ' . $this->_file_src, E_USER_NOTICE );
             return false;
         }
 
         if ( false == file_put_contents( $tmp_name, $contents ) ) {
-            trigger_error( 'cannot write to ' . $tmp_name, E_USER_ERROR );
+            trigger_error( 'cannot write to ' . $tmp_name, E_USER_NOTICE );
             return false;
         }
 
@@ -136,18 +136,18 @@ class File {
             $content = file_get_contents( $this->_file_src );
 
             if ( false === $content ) {
-                trigger_error( 'cannot read from ' . $this->_file_src, E_USER_ERROR );
+                trigger_error( 'cannot read from ' . $this->_file_src, E_USER_NOTICE );
                 return;
             }
 
             $bytes = file_put_contents( $path, $content );
 
             if ( false === $bytes ) {
-                trigger_error( 'unable to read/write to cache ' . $path, E_USER_ERROR );
+                trigger_error( 'unable to read/write to cache ' . $path, E_USER_NOTICE );
                 return;
             }
             if ( 0 == $bytes ) {
-                trigger_error( 'zero bytes written to ' . $path, E_USER_ERROR );
+                trigger_error( 'zero bytes written to ' . $path, E_USER_NOTICE );
                 unlink($path);
             }
         }

@@ -4,6 +4,8 @@ var page = new WebPage(),
     url         = phantom.args[0],
     outputFile  = phantom.args[1];
 
+page.viewportSize = { width: 1280, height: 1024 }
+
 page.onConsoleMessage = function (msg) {
     console.log(msg);
 };

@@ -26,7 +26,7 @@
 (function($) {
     function getInlineTextCSS( el ){
         var spec = (
-            'font-size font-family font-weight color '
+            'font-size line-height font-family font-weight color '
             + 'letter-spacing word-spacing text-align'
         ).split(/\s/);
 

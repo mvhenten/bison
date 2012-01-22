@@ -107,8 +107,6 @@ class File {
             return false;
         }
 
-        print "WROTE TO $tmp_name \n";
-
         return $tmp_name;
     }
 

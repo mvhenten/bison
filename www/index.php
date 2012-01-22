@@ -17,7 +17,7 @@
 //ini_set('display_errors', "true");
 //ini_set('display_warnings', "true");
 
-define( 'BISON_WWW_PATH', dirname(__FILE__) );
+define( 'BISON_WWW_PATH', dirname($_SERVER['SCRIPT_FILENAME']) );
 define( 'BISON_BASE_PATH', dirname(__FILE__) . '/..' );
 define( 'BISON_SOURCE_HOST', 'www.transmediale.de' );
 //define( 'BISON_SOURCE_HOST', 'transmediale.localhost' );

@@ -14,11 +14,8 @@
  This file is assumed to be in your www root
 */
 
-ini_set('display_errors', "true");
-ini_set('display_warnings', "true");
-//ini_set('upload_max_filesize', '16M');
-//ini_set('post_max_size', '16M');
-
+//ini_set('display_errors', "true");
+//ini_set('display_warnings', "true");
 
 define( 'BISON_WWW_PATH', dirname(__FILE__) );
 define( 'BISON_BASE_PATH', dirname(__FILE__) . '/..' );
@@ -35,14 +32,15 @@ if ( ( $url = parse_url( $_GET['s'] ) ) &&  isset($url['host']) && $url['host'] 
     exit();
 }
 
-function error_cannot_run_xvfb(){
-    ?>
+function error_cannot_run_xvfb() {
+?>
     <h2>Ooops...</h2>
     <p>Something unexpected has happened, we are not yet sure what it could have been.</p>
     <p>Follow <a href="<?php echo $hotglue_source_url ?>">this</a> link to get back to where you wanted to go.</p>
     <?php
     exit();
 }
+
 
 @session_start();
 
@@ -73,7 +71,7 @@ $url_parsed = parse_url( $hotglue_source_url );
 $page_name       = isset( $url_parsed['path'] ) ? str_replace('/', '-', trim($url_parsed['path'], '/')) : 'start';
 $hotglue_content_path = $user_hotglue_path . '/content/' . $page_name;
 
-if( !file_exists( $hotglue_content_path ) ){
+if ( !file_exists( $hotglue_content_path ) ) {
     $phantomjs = trim(shell_exec('which phantomjs' ));
 
     $args = array(
@@ -85,7 +83,7 @@ if( !file_exists( $hotglue_content_path ) ){
     $cmd = vsprintf('xvfb-run -w0 -a phantomjs transmediale.phantom.js %s %s', $args );
     exec( $cmd, $output, $status );
 
-    if( $status !== 0 ){
+    if ( $status !== 0 ) {
         error_cannot_run_xvfb();
     }
 

@@ -22,8 +22,8 @@ ini_set('display_warnings', "true");
 
 define( 'BISON_WWW_PATH', dirname(__FILE__) );
 define( 'BISON_BASE_PATH', dirname(__FILE__) . '/..' );
-//define( 'BISON_SOURCE_HOST', 'www.transmediale.de' );
-define( 'BISON_SOURCE_HOST', 'transmediale.localhost' );
+define( 'BISON_SOURCE_HOST', 'www.transmediale.de' );
+//define( 'BISON_SOURCE_HOST', 'transmediale.localhost' );
 
 if ( !isset( $_GET['s'] ) ) {
     header('403 Forbidden', true, 403 );
@@ -62,8 +62,6 @@ $uniqid              = $_SESSION['uniqid'];
 $user_hotglue_path   = BISON_WWW_PATH . '/user/' . $uniqid;
 $hotglue_source_url  = $_GET['s'];
 $json_source_path    = sys_get_temp_dir() . '/json-cache-' . $uniqid . '-' . md5( $hotglue_source_url );
-
-session_destroy();
 
 if ( !file_exists( $user_hotglue_path ) ) {
     @mkdir( $user_hotglue_path );

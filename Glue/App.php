@@ -144,12 +144,8 @@ class App extends Base {
                 return;
             }
         }
-        //
-        //rename( $file->path, $path );
 
         $file->move( $path );
-        //$file->set_basename( basename($path) );
-
     }
 
 

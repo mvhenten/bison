@@ -80,6 +80,7 @@ class Create extends Base {
         $s = '<?php'."\n";
         $s .= '@define(\'AUTH_USER\', \''.$secret.'\');'."\n";
         $s .= '@define(\'AUTH_PASSWORD\', \''.$secret.'\');'."\n";
+        $s .= '@define(\'DEFAULT_TO_EDIT\', true);';
         $s .= '?>'."\n";
 
         file_put_contents( $this->_targetPath( 'user-config.inc.php' ), $s);

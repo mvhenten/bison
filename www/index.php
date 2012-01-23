@@ -14,8 +14,8 @@
  This file is assumed to be in your www root
 */
 
-//ini_set('display_errors', "true");
-//ini_set('display_warnings', "true");
+ini_set('display_errors', "false");
+ini_set('display_warnings', "false");
 
 define( 'BISON_WWW_PATH', dirname($_SERVER['SCRIPT_FILENAME']) );
 define( 'BISON_BASE_PATH', dirname(__FILE__) . '/..' );
@@ -32,6 +32,10 @@ if ( ( $url = parse_url( $_GET['s'] ) ) &&  isset($url['host']) && $url['host'] 
     exit();
 }
 
+
+/**
+ *
+ */
 function error_cannot_run_xvfb() {
 ?>
     <h2>Ooops...</h2>
@@ -42,7 +46,7 @@ function error_cannot_run_xvfb() {
 }
 
 
-@session_start();
+session_start();
 
 require_once BISON_BASE_PATH . '/Glue/Create.php';
 require_once BISON_BASE_PATH . '/Glue/App.php';
@@ -88,7 +92,6 @@ if ( !file_exists( $hotglue_content_path ) ) {
     }
 
     $json = json_decode( file_get_contents( $json_source_path ) );
-
     $app  = new App( $hotglue_content_path, $json );
     $app->write();
 }
@@ -97,3 +100,4 @@ $target = join( '/', array('http:/', $_SERVER['SERVER_NAME'], 'user', $uniqid, $
 
 header('Location: ' . $target, 303 );
 echo $target;
+exit();

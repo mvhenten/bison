@@ -2,9 +2,11 @@
 var glue_me = ( function () {
     /**
      * Hand-picked selectors from transmediale
-     * 
+     *
      */
-    var selectors = ['p,img,a:visible,h1:visible,h2,h3',
+    var selectors = [
+        'p,img,a:visible',
+        'h1:visible,h2,h3',
         'div.cloud',
         'div.views-row',
         'div.festival-menu',
@@ -17,8 +19,13 @@ var glue_me = ( function () {
         '.goldtext',
         '#sidebar-right .content',
         '#sidebar-right .block',
+        '.buildmode-full',
+        '.field-ds-group-bluegroup'
     ].join(',');
 
+    /**
+     * Get rid of HTML comments
+     */
     $('*').contents().each(function() {
         if(this.nodeType == 8) {
             $(this).remove();

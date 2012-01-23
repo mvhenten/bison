@@ -32,6 +32,8 @@ var glue_me = ( function () {
         }
     });
 
+    //$('script').remove();
+
     return {
         go: function(){
 

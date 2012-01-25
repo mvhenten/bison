@@ -100,4 +100,5 @@ $target = join( '/', array('http:/', $_SERVER['SERVER_NAME'], 'user', $uniqid, $
 
 header('Location: ' . $target, 303 );
 echo $target;
+session_destroy();
 exit();

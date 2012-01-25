@@ -5,7 +5,7 @@ var glue_me = ( function () {
      *
      */
     var selectors = [
-        'p,img,a:visible',
+        'p:visible,img:visible,a:visible',
         'h1:visible,h2,h3',
         'div.cloud',
         'div.views-row',
@@ -20,7 +20,8 @@ var glue_me = ( function () {
         '#sidebar-right .content',
         '#sidebar-right .block',
         '.buildmode-full',
-        '.field-ds-group-bluegroup'
+        '.field-ds-group-bluegroup',
+        '#main'
     ].join(',');
 
     /**
@@ -32,7 +33,8 @@ var glue_me = ( function () {
         }
     });
 
-    //$('script').remove();
+    // hiding content that's hidden by js
+    $('script, .relatedcontent').remove();
 
     return {
         go: function(){

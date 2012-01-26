@@ -32,7 +32,7 @@ class App extends Base {
     protected $_basenum;
 
     /**
-     * Constructor required at leas a base path and json
+     * Constructor required at least a base path and json
      *
      * @param unknown $path
      * @param unknown $json

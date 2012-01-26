@@ -1,4 +1,20 @@
 <?php
+/**
+ * www/pjson.php
+ *
+ * This file implements a very simple webservice
+ * for the Hotglue/Transmediale project. It simply lists available user pages
+ * for a give URL, passed as an parameter.
+ *
+ * usage:
+ *
+ *  curl http://bison.localhost/pjson.php?src=http://www.transmediale.de/tm2k12
+ *
+ * @author Matthijs van Henten <matthijs@ischen.nl>
+ * @package Bison
+ */
+
+
 ini_set('display_errors', "false");
 ini_set('display_warnings', "false");
 
@@ -7,9 +23,14 @@ define( 'BISON_BASE_PATH', dirname(__FILE__) . '/..' );
 define( 'BISON_SOURCE_HOST', 'www.transmediale.de' );
 define( 'BISON_USER_CACHE_TTL', 1800 ); // half an hour
 define( 'BISON_PAGE_LIST_CACHE', sys_get_temp_dir() . '/bison-page-list.json');
-//define( 'BISON_SOURCE_HOST', 'transmediale.localhost' );
 
-function page_cache_expired(){
+
+/**
+ * Checks if BISON_PAGE_LIST_CACHE is older then BISON_USER_CACHE_TTL
+ *
+ * @return unknown
+ */
+function page_cache_expired() {
     $mtime = filemtime( BISON_PAGE_LIST_CACHE );
 
     if ( $mtime < ( time() - BISON_USER_CACHE_TTL ) ) {
@@ -19,7 +40,13 @@ function page_cache_expired(){
     return false;
 }
 
-function get_content_dir_list(){
+
+/**
+ * Retrieves a list of files in the user directory using find
+ *
+ * @return unknown
+ */
+function get_content_dir_list() {
     $args = array(
         escapeshellarg( BISON_WWW_PATH ),
     );
@@ -30,20 +57,27 @@ function get_content_dir_list(){
     return $output;
 }
 
-function get_page_list(){
+
+/**
+ * Retrieves a list of uniqe page-names, and returns them as an array of
+ * page_name => [userids]
+ *
+ * @return array page => [uid, uid]
+ */
+function get_page_list() {
     $files = get_content_dir_list();
     $pages = array();
 
-    foreach( $files as $path ){
+    foreach ( $files as $path ) {
         $match = get_page_name($path);
-        if( $match ){
+        if ( $match ) {
             list( $dir, $uid, $page_name ) = $match;
 
-            if( $page_name == 'cache' ){
+            if ( $page_name == 'cache' ) {
                 continue;
             }
 
-            if(!isset($pages[$page_name])){
+            if (!isset($pages[$page_name])) {
                 $pages[$page_name] = array();
             }
 
@@ -57,15 +91,28 @@ function get_page_list(){
     return $pages;
 }
 
-function get_page_name( $path ){
-    if( preg_match('/\.\/(\w+)\/content\/(.+?)\//', $path, $match) ){
+
+/**
+ * Returns a tuple containging page_name and user id
+ *
+ * @param string  $path File path
+ * @return array tuble of page_name and user_id
+ */
+function get_page_name( $path ) {
+    if ( preg_match('/\.\/(\w+)\/content\/(.+?)\//', $path, $match) ) {
         return $match;
     }
     return false;
 }
 
-function get_page_cache(){
-    if( !file_exists( BISON_PAGE_LIST_CACHE ) || page_cache_expired() ){
+
+/**
+ * Retrieves page_cache from cache file, or runs get_page_list() if needed
+ *
+ * @return array $pages list of pages => users
+ */
+function get_page_cache() {
+    if ( !file_exists( BISON_PAGE_LIST_CACHE ) || page_cache_expired() ) {
         $pages = get_page_list();
         write_page_cache( $pages );
     }
@@ -75,7 +122,13 @@ function get_page_cache(){
     return (array) json_decode( $json_str );
 }
 
-function write_page_cache( $pages ){
+
+/**
+ * Writes page_cache and updates current cache
+ *
+ * @param array   $pages
+ */
+function write_page_cache( array $pages ) {
     $tempname = tempnam( sys_get_temp_dir(), 'bison-page-list-');
 
     file_put_contents( $tempname, json_encode( $pages ) );
@@ -84,7 +137,14 @@ function write_page_cache( $pages ){
     rename( $tempname, BISON_PAGE_LIST_CACHE );
 }
 
-function normalize_page_name( $url ){
+
+/**
+ * Creates a normalized page-name used in hotglue URLS
+ *
+ * @param string  $url
+ * @return unknown
+ */
+function normalize_page_name( $url ) {
     $url_parsed = parse_url( $url );
 
     $page_name = isset( $url_parsed['path'] ) ? str_replace('/', '-', trim($url_parsed['path'], '/')) : 'start';
@@ -92,6 +152,14 @@ function normalize_page_name( $url ){
     return $page_name;
 }
 
+
+/**
+ * Creates an absolute url from path parts
+ * Note: multiple parts can be given as additional arguments
+ *
+ * @param string  $path_parts
+ * @return unknown
+ */
 function get_page_url( $path_parts ) {
     $path_parts = array_merge( array('http:/', $_SERVER['SERVER_NAME'], 'user' ), func_get_args());
     $target = join( '/', $path_parts );
@@ -99,22 +167,31 @@ function get_page_url( $path_parts ) {
     return $target;
 }
 
-function get_page_urls( $page_name, array $user_ids ){
+
+/**
+ * Converts all matched pages to urls
+ *
+ * @param unknown $page_name
+ * @param array   $user_ids
+ * @return array $urls
+ */
+function get_page_urls( $page_name, array $user_ids ) {
     $collect = array();
 
-    foreach( $user_ids as $uid ){
+    foreach ( $user_ids as $uid ) {
         $collect[] = get_page_url( $uid, $page_name );
     }
 
     return $collect;
 }
 
-if( isset( $_GET['src'] ) ){
+
+if ( isset( $_GET['src'] ) ) {
     $page_name = normalize_page_name( $_GET['src'] );
     $pages     = get_page_cache();
     $callback  = isset($_GET['pjson']) ? $_GET['pjson'] : 'bison_callback';
 
-    if( isset($pages[$page_name]) ){
+    if ( isset($pages[$page_name]) ) {
         $urls  = get_page_urls( $page_name, $pages[$page_name]);
         $jsonp = sprintf('%s(%s)', $callback, json_encode($urls));
 
@@ -125,6 +202,6 @@ if( isset( $_GET['src'] ) ){
         exit();
     }
 }
-else{
+else {
     echo '{error: "you must provide a source url and a callback"}';
 }

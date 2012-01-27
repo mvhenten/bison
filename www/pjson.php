@@ -189,7 +189,7 @@ function get_page_urls( $page_name, array $user_ids ) {
 if ( isset( $_GET['src'] ) ) {
     $page_name = normalize_page_name( $_GET['src'] );
     $pages     = get_page_cache();
-    $callback  = isset($_GET['pjson']) ? $_GET['pjson'] : 'bison_callback';
+    $callback  = isset($_GET['callback']) ? $_GET['callback'] : 'bison_callback';
 
     if ( isset($pages[$page_name]) ) {
         $urls  = get_page_urls( $page_name, $pages[$page_name]);

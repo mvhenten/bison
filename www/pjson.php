@@ -42,7 +42,8 @@ function page_cache_expired() {
 
 
 /**
- * Retrieves a list of files in the user directory using find
+ * Retrieves a list of files in the user directory using find,
+ * sorted by mtime (ascending)
  *
  * @return unknown
  */
@@ -52,8 +53,21 @@ function get_content_dir_list() {
     );
 
     chdir( BISON_WWW_PATH . '/user/' );
-    $cmd = vsprintf('find . | grep content', $args );
+    $cmd = 'find . -printf "%A@ %p\n"';
     exec( $cmd, $output, $status );
+
+    $output = array_map( function( $value ) {
+            return explode(' ', $value );
+        }, $output );
+
+    usort( $output, function( $a, $b) {
+            return $a[0] < $b[0] ? 1 : -1;
+        });
+
+    $output = array_map( function($value) {
+            return $value[1];
+        }, $output );
+
     return $output;
 }
 
@@ -189,6 +203,7 @@ function get_page_urls( $page_name, array $user_ids ) {
 if ( isset( $_GET['src'] ) ) {
     $page_name = normalize_page_name( $_GET['src'] );
     $pages     = get_page_cache();
+
     $callback  = isset($_GET['callback']) ? $_GET['callback'] : 'bison_callback';
 
     if ( isset($pages[$page_name]) ) {

@@ -26,8 +26,6 @@ define( 'BISON_JSON_CACHE_TTL', 10800 ); // three hours
 @session_start();
 
 if ( isset( $_SESSION['uniqid'] ) && !isset( $_GET['s'] ) ) {
-    $target = join( '/', array('http:/', $_SERVER['SERVER_NAME'], 'user', $_SESSION['uniqid'], $page_name ) );
-
     $path = find_user_page( $_SESSION['uniqid'] );
 
     if ( $path ) {

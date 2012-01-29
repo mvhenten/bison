@@ -34,7 +34,8 @@ if ( isset( $_SESSION['uniqid'] ) && !isset( $_GET['s'] ) ) {
 }
 
 if ( !isset( $_GET['s'] ) ) {
-    header('403 Forbidden', true, 403 );
+    header('Location: http://incompatible.hotglue.org/read/me');
+//    header('403 Forbidden', true, 403 );
     exit();
 }
 

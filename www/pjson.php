@@ -21,7 +21,7 @@ ini_set('display_warnings', "false");
 define( 'BISON_WWW_PATH', dirname($_SERVER['SCRIPT_FILENAME']) );
 define( 'BISON_BASE_PATH', dirname(__FILE__) . '/..' );
 define( 'BISON_SOURCE_HOST', 'www.transmediale.de' );
-define( 'BISON_USER_CACHE_TTL', 3 ); // 5 minutes
+define( 'BISON_USER_CACHE_TTL', 300 ); // 5 minutes
 define( 'BISON_PAGE_LIST_CACHE', sys_get_temp_dir() . '/bison-page-list.json');
 
 

@@ -21,7 +21,7 @@ ini_set('display_warnings', "false");
 define( 'BISON_WWW_PATH', dirname($_SERVER['SCRIPT_FILENAME']) );
 define( 'BISON_BASE_PATH', dirname(__FILE__) . '/..' );
 define( 'BISON_SOURCE_HOST', 'www.transmediale.de' );
-define( 'BISON_USER_CACHE_TTL', 300 ); // 5 minutes
+define( 'BISON_USER_CACHE_TTL', 3000 ); // 5 minutes
 define( 'BISON_PAGE_LIST_CACHE', sys_get_temp_dir() . '/bison-page-list.json');
 
 
@@ -40,6 +40,13 @@ function page_cache_expired() {
     return false;
 }
 
+function sort_find_line( $a, $b ){
+    $sa = explode(' ', $a);
+    $sb = explode(' ', $b);
+
+    return $sa[0] < $sb[0] ? 1 : -1;
+}
+
 
 /**
  * Retrieves a list of files in the user directory using find,
@@ -53,22 +60,19 @@ function get_content_dir_list() {
     );
 
     chdir( BISON_WWW_PATH . '/user/' );
-    $cmd = 'find . -printf "%A@ %p\n"';
+    $cmd = 'find . -type d -printf "%A@ %p\n" | grep -E content/\(\.+?\)/head';
+
     exec( $cmd, $output, $status );
+    usort( $output, 'sort_find_line' );
 
-    $output = array_map( function( $value ) {
-            return explode(' ', $value );
-        }, $output );
+    $collect = array();
 
-    usort( $output, function( $a, $b) {
-            return $a[0] < $b[0] ? 1 : -1;
-        });
+    foreach( $output as $str ){
+        list($time, $path) = explode(' ', $str );
+        $collect[] = $path;
+    }
 
-    $output = array_map( function($value) {
-            return $value[1];
-        }, $output );
-
-    return $output;
+    return $collect;
 }
 
 

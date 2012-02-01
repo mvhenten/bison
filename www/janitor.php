@@ -8,7 +8,7 @@ ini_set('display_warnings', "false");
 define( 'BISON_WWW_PATH', '/home/hotglue/www-transglue' );
 define( 'BISON_PAGE_LIST_CACHE', sys_get_temp_dir() . '/bison-page-list.json');
 
-define( 'BISON_INSTANCE_MAX_AGE', '-3 hours' );
+define( 'BISON_INSTANCE_MAX_AGE', '-2 hours' );
 define( 'BISON_MIN_PAGE_COUNT', 4 );
 
 // list all user dirs
@@ -28,27 +28,25 @@ define( 'BISON_MIN_PAGE_COUNT', 4 );
 // collect this user id
 
 function list_user_dirs(){
-    $args = array(
-        escapeshellarg( BISON_WWW_PATH ),
-    );
-
     chdir( BISON_WWW_PATH . '/user/' );
-    $cmd = 'find . -maxdepth 1 -type d -printf "%A@ %p\n';
+    $cmd = 'find . -maxdepth 1 -type d -printf "%A@ %p\n"';
 
     exec( $cmd, $output, $status );
+	
     usort( $output, 'sort_find_line' );
 
     $collect = array();
+	
 
     foreach( $output as $str ){
         list($time, $path) = explode(' ', $str );
-        $collect[$time] = $path;
+        $collect[] = $path;
     }
 
     return $collect;	
 }
 
-function user_dir_pages(){
+function user_dir_pages( $user_dir ){
     chdir( BISON_WWW_PATH . '/user/' );
 	
 	$cmd = sprintf('find %s/content/ -maxdepth 1 -type d', escapeshellarg( $user_dir ) );
@@ -68,7 +66,8 @@ function sort_find_line( $a, $b ){
 function user_dir_max_mtime( $user_dir ){
     chdir( BISON_WWW_PATH . '/user/' );
 	
-	$cmd = sprintf('find %s/content/ -printf "%A@\n"', escapeshellarg( $user_dir ) );
+	
+	$cmd = sprintf('find %s/content/ -printf "%%A@\n"', escapeshellarg( $user_dir ) );
 	exec( $cmd, $output, $status );
 	
 	$out = array_map( 'intval', $output );
@@ -102,6 +101,7 @@ $collect    = array();
 $max_age    = strtotime( BISON_INSTANCE_MAX_AGE );
 
 foreach( $user_dirs as $mtime => $user_dir ){
+
 	$max_mtime = user_dir_max_mtime( $user_dir );
 	
 	if( $max_mtime < $max_age ){
@@ -109,7 +109,7 @@ foreach( $user_dirs as $mtime => $user_dir ){
 			list( , $uid ) = explode('/', $user_dir );
 			$collect[] = $uid;
 		}
-	}
+	}	
 }
 
 foreach( $collect as $uid ){

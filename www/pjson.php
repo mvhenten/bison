@@ -69,7 +69,7 @@ function get_content_dir_list() {
 
     foreach( $output as $str ){
         list($time, $path) = explode(' ', $str );
-        $collect[] = $path;
+        $collect[$time] = $path;
     }
 
     return $collect;
@@ -86,7 +86,7 @@ function get_page_list() {
     $files = get_content_dir_list();
     $pages = array();
 
-    foreach ( $files as $path ) {
+    foreach ( $files as $mtime => $path ) {
         $match = get_page_name($path);
         if ( $match ) {
             list( $dir, $uid, $page_name ) = $match;
@@ -101,8 +101,10 @@ function get_page_list() {
 
             $collect = $pages[$page_name];
 
-            array_push( $collect, $uid );
-            $pages[$page_name] = array_unique($collect);
+	    if( (strtotime('-4 hour') < $mtime) || count($collect) < 4 ){
+	        array_push( $collect, $uid );
+       		$pages[$page_name] = array_unique($collect);
+	    }
         }
     }
 

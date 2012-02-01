@@ -83,8 +83,9 @@ function get_content_dir_list() {
  * @return array page => [uid, uid]
  */
 function get_page_list() {
-    $files = get_content_dir_list();
-    $pages = array();
+    $files   = get_content_dir_list();
+    $pages   = array();
+    $max_age = strtotime('-2 hour');
 
     foreach ( $files as $mtime => $path ) {
         $match = get_page_name($path);
@@ -101,7 +102,7 @@ function get_page_list() {
 
             $collect = $pages[$page_name];
 
-	    if( (strtotime('-2 hour') < $mtime) || count($collect) < 4 ){
+	    if( ($max_age < $mtime) || count($collect) < 4 ){
 	        array_push( $collect, $uid );
        		$pages[$page_name] = array_unique($collect);
 	    }

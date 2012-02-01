@@ -20,7 +20,7 @@ ini_set('display_warnings', "false");
 define( 'BISON_WWW_PATH', dirname($_SERVER['SCRIPT_FILENAME']) );
 define( 'BISON_BASE_PATH', dirname(__FILE__) . '/..' );
 define( 'BISON_SOURCE_HOST', 'www.transmediale.de' );
-define( 'BISON_JSON_CACHE_TTL', 10800 ); // three hours
+define( 'BISON_JSON_CACHE_TTL', 28800 ); // eight hours
 //define( 'BISON_SOURCE_HOST', 'transmediale.localhost' );
 
 @session_start();

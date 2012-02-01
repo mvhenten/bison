@@ -101,7 +101,8 @@ $collect    = array();
 $max_age    = strtotime( BISON_INSTANCE_MAX_AGE );
 
 foreach( $user_dirs as $mtime => $user_dir ){
-
+	if( $user_dir == '.' ) continue;
+	
 	$max_mtime = user_dir_max_mtime( $user_dir );
 	
 	if( $max_mtime < $max_age ){

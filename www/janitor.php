@@ -5,6 +5,7 @@
 ini_set('display_errors', "false");
 ini_set('display_warnings', "false");
 
+//define( 'BISON_WWW_PATH', '/home/matthijs/tmp' );
 define( 'BISON_WWW_PATH', '/home/hotglue/www-transglue' );
 define( 'BISON_PAGE_LIST_CACHE', sys_get_temp_dir() . '/bison-page-list.json');
 
@@ -12,20 +13,14 @@ define( 'BISON_INSTANCE_MAX_AGE', '-3 hours' );
 define( 'BISON_MIN_PAGE_COUNT', 4 );
 
 // list all user dirs
-
 // loop over all user dirs
-
 // for each user dir, find the latest mtime
-
 // for each user dir, find the pages for that dir
-
 // check the amount of pages in page cache
-
 // if there are enough pages
-
 // and mtime < max_age
-
 // collect this user id
+// delete it - it's old
 
 function list_user_dirs(){
     chdir( BISON_WWW_PATH . '/user/' );
@@ -55,6 +50,11 @@ function user_dir_pages( $user_dir ){
 	return $output;
 }
 
+function remove_user_dir( $user_dir ){
+    chdir( BISON_WWW_PATH . '/user/' );
+	
+	$cmd = sprintf('rm -rf %s', escapeshellarg($user_dir) );
+}
 
 function sort_find_line( $a, $b ){
     $sa = explode(' ', $a);
@@ -107,13 +107,14 @@ foreach( $user_dirs as $mtime => $user_dir ){
 	
 	if( $max_mtime < $max_age ){
 		if( user_dir_pages_check( $user_dir, $page_cache ) ){
-			list( , $uid ) = explode('/', $user_dir );
-			$collect[] = $uid;
+			$collect[] = $user_dir;
 		}
 	}	
 }
 
-foreach( $collect as $uid ){
-	echo "DEPRECATING: $uid\n";
+foreach( $collect as $user_dir ){
+	echo "removing $user_dir\n";
+	remove_user_dir( $user_dir );	
 }
 
+unlink(BISON_PAGE_LIST_CACHE);

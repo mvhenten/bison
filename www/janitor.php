@@ -5,8 +5,8 @@
 ini_set('display_errors', "false");
 ini_set('display_warnings', "false");
 
-//define( 'BISON_WWW_PATH', '/home/matthijs/tmp' );
-define( 'BISON_WWW_PATH', '/home/hotglue/www-transglue' );
+define( 'BISON_WWW_PATH', '/home/matthijs/tmp' );
+//define( 'BISON_WWW_PATH', '/home/hotglue/www-transglue' );
 define( 'BISON_PAGE_LIST_CACHE', sys_get_temp_dir() . '/bison-page-list.json');
 
 define( 'BISON_INSTANCE_MAX_AGE', '-3 hours' );
@@ -51,9 +51,11 @@ function user_dir_pages( $user_dir ){
 }
 
 function remove_user_dir( $user_dir ){
-    chdir( BISON_WWW_PATH . '/user/' );
+	@list( $dot, $uid ) = explode( '/', $user_dir );	
 	
-	$cmd = sprintf('rm -rf %s', escapeshellarg($user_dir) );
+	$path = BISON_WWW_PATH . '/user/' . $uid;	
+	$cmd = sprintf('rm -rf %s', escapeshellarg($path) );
+	exec($cmd);
 }
 
 function sort_find_line( $a, $b ){
@@ -67,7 +69,7 @@ function user_dir_max_mtime( $user_dir ){
     chdir( BISON_WWW_PATH . '/user/' );
 	
 	
-	$cmd = sprintf('find %s/content/ -printf "%%A@\n"', escapeshellarg( $user_dir ) );
+	$cmd = sprintf('find %s/content/ -type f -printf "%%A@\n"', escapeshellarg( $user_dir ) );
 	exec( $cmd, $output, $status );
 	
 	$out = array_map( 'intval', $output );
@@ -117,4 +119,4 @@ foreach( $collect as $user_dir ){
 	remove_user_dir( $user_dir );	
 }
 
-unlink(BISON_PAGE_LIST_CACHE);
+@unlink(BISON_PAGE_LIST_CACHE);

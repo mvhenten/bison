@@ -196,7 +196,9 @@ function get_page_url( $path_parts ) {
 function get_page_urls( $page_name, array $user_ids ) {
     $collect = array();
 
-    foreach ( $user_ids as $uid ) {
+    $ids = array_slice( $user_ids, 0, 4 );
+
+    foreach ( $ids as $uid ) {
         $collect[] = get_page_url( $uid, $page_name );
     }
 

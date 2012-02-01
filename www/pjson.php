@@ -85,7 +85,7 @@ function get_content_dir_list() {
 function get_page_list() {
     $files   = get_content_dir_list();
     $pages   = array();
-    $max_age = strtotime('-2 hour');
+    $max_age = strtotime('-1 hour');
 
     foreach ( $files as $mtime => $path ) {
         $match = get_page_name($path);

@@ -9,7 +9,7 @@ ini_set('display_warnings', "false");
 define( 'BISON_WWW_PATH', '/home/hotglue/www-transglue' );
 define( 'BISON_PAGE_LIST_CACHE', sys_get_temp_dir() . '/bison-page-list.json');
 
-define( 'BISON_INSTANCE_MAX_AGE', '-3 hours' );
+define( 'BISON_INSTANCE_MAX_AGE', '-2 hours' );
 define( 'BISON_MIN_PAGE_COUNT', 4 );
 
 // list all user dirs

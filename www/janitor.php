@@ -5,8 +5,8 @@
 ini_set('display_errors', "false");
 ini_set('display_warnings', "false");
 
-define( 'BISON_WWW_PATH', '/home/matthijs/tmp' );
-//define( 'BISON_WWW_PATH', '/home/hotglue/www-transglue' );
+//define( 'BISON_WWW_PATH', '/home/matthijs/tmp' );
+define( 'BISON_WWW_PATH', '/home/hotglue/www-transglue' );
 define( 'BISON_PAGE_LIST_CACHE', sys_get_temp_dir() . '/bison-page-list.json');
 
 define( 'BISON_INSTANCE_MAX_AGE', '-3 hours' );

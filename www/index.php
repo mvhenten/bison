@@ -44,6 +44,16 @@ if ( ( $url = parse_url( $_GET['s'] ) ) &&  isset($url['host']) && $url['host'] 
     exit();
 }
 
+$pause = true;
+
+if( $pause ){
+	// enable this to stop bison temporarily
+	header('Location: ' . $_GET['s']);
+	exit();
+
+}
+
+
 
 /**
  * Creates an absolute url from various $path_parts and does a redirect

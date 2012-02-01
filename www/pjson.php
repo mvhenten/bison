@@ -101,7 +101,7 @@ function get_page_list() {
 
             $collect = $pages[$page_name];
 
-	    if( (strtotime('-4 hour') < $mtime) || count($collect) < 4 ){
+	    if( (strtotime('-2 hour') < $mtime) || count($collect) < 4 ){
 	        array_push( $collect, $uid );
        		$pages[$page_name] = array_unique($collect);
 	    }

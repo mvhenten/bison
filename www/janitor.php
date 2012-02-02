@@ -107,8 +107,11 @@ function user_dir_pages_check( $user_dir, &$page_cache ){
 		$min_mtime = min($mtimes);
 		$max_mtime = max($mtimes);
 		
-		if( ( $max_mtime - $min_mtime ) > 5 ){
-			echo "PAGE HAS MODIFICATIONS: " . ($max_mtime - $min_mtime);
+		$mod_delta = $max_mtime - $min_mtime;
+		
+		if( $mod_delta > 5 ){
+			echo "PAGE HAS MODIFICATIONS: $uid/$page_name\n";
+			echo "MOD_DELTA: $mod_delta\n";			
 		}
 		
 		//if( count(array_unique($mtimes)) > 20 ){
@@ -140,7 +143,7 @@ foreach( $user_dirs as $mtime => $user_dir ){
 	$max_mtime 	= max($mtimes);
 	$diff_count = count(array_unique($mtimes));
 	
-	echo "USER: $user_dir, DIFF: $diff_count\n";
+//	echo "USER: $user_dir, DIFF: $diff_count\n";
 	
 	if( ( ($max_mtime < $max_age) && $diff_count < 300 ) ){
 		if( user_dir_pages_check( $user_dir, $page_cache ) ){

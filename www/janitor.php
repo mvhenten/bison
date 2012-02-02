@@ -96,7 +96,7 @@ function user_dir_pages_check( $user_dir, &$page_cache ){
 	
 	foreach( $user_pages as $str ){
 		@list( , $uid, , $page_name ) = explode( '/', $str );
-		if( $page_name == 'cache' ) continue;
+		if( $page_name == 'cache' || $page_name == '' ) continue;
 		
 		if( !isset($page_cache[$page_name]) ){
 			$page_cache[$page_name] = 0;
@@ -104,9 +104,16 @@ function user_dir_pages_check( $user_dir, &$page_cache ){
 		
 		$mtimes = user_dir_page_mtime( $user_dir, $page_name );
 		
-		if( count(array_unique($mtimes)) > 20 ){
-			echo "PAGE HAS MODIFICATIONS: $uid/$page_name\n";
+		$min_mtime = min($mtimes);
+		$max_mtime = max($mtimes);
+		
+		if( ( $max_mtime - $min_mtime ) > 5 ){
+			echo "PAGE HAS MODIFICATIONS: " . ($max_mtime - $min_mtime);
 		}
+		
+		//if( count(array_unique($mtimes)) > 20 ){
+		//	echo "PAGE HAS MODIFICATIONS: $uid/$page_name\n";
+		//}
 			
 		
 		if( $page_cache[$page_name] < BISON_MIN_PAGE_COUNT ){

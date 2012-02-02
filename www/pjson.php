@@ -24,6 +24,10 @@ define( 'BISON_SOURCE_HOST', 'www.transmediale.de' );
 define( 'BISON_USER_CACHE_TTL', 300 ); // 5 minutes
 define( 'BISON_PAGE_LIST_CACHE', sys_get_temp_dir() . '/bison-page-list.json');
 
+define( 'BISON_INSTANCE_MAX_AGE', '-1 hours' );
+define( 'BISON_MIN_PAGE_COUNT', 5 );
+
+
 
 /**
  * Checks if BISON_PAGE_LIST_CACHE is older then BISON_USER_CACHE_TTL
@@ -85,7 +89,7 @@ function get_content_dir_list() {
 function get_page_list() {
     $files   = get_content_dir_list();
     $pages   = array();
-    $max_age = strtotime('-1 hour');
+    $max_age = strtotime( BISON_INSTANCE_MAX_AGE );
 
     foreach ( $files as $mtime => $path ) {
         $match = get_page_name($path);
@@ -102,7 +106,7 @@ function get_page_list() {
 
             $collect = $pages[$page_name];
 
-	    if( ($max_age < $mtime) || count($collect) < 4 ){
+	    if( ($max_age < $mtime) || count($collect) < BISON_MIN_PAGE_COUNT ){
 	        array_push( $collect, $uid );
        		$pages[$page_name] = array_unique($collect);
 	    }
@@ -199,9 +203,7 @@ function get_page_url( $path_parts ) {
 function get_page_urls( $page_name, array $user_ids ) {
     $collect = array();
 
-    $ids = array_slice( $user_ids, 0, 4 );
-
-    foreach ( $ids as $uid ) {
+    foreach ( $user_ids as $uid ) {
         $collect[] = get_page_url( $uid, $page_name );
     }
 

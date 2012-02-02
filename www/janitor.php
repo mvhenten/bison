@@ -5,11 +5,12 @@
 ini_set('display_errors', "false");
 ini_set('display_warnings', "false");
 
-//define( 'BISON_WWW_PATH', '/home/matthijs/tmp' );
+define( 'BISON_WWW_PATH', '/home/matthijs/tmp' );
 define( 'BISON_WWW_PATH', '/home/hotglue/www-transglue' );
-define( 'BISON_PAGE_LIST_CACHE', sys_get_temp_dir() . '/bison-page-list.json');
+//define( 'BISON_PAGE_LIST_CACHE', sys_get_temp_dir() . '/bison-page-list.json');
 
-define( 'BISON_INSTANCE_MAX_AGE', '-2 hours' );
+define( 'BISON_INSTANCE_MAX_AGE', '-6 hours' );
+//define( 'BISON_INSTANCE_MAX_AGE', '-2 minutes' );
 define( 'BISON_MIN_PAGE_COUNT', 4 );
 
 // list all user dirs
@@ -65,7 +66,7 @@ function sort_find_line( $a, $b ){
     return $sa[0] < $sb[0] ? 1 : -1;
 }
 
-function user_dir_max_mtime( $user_dir ){
+function user_dir_mtime( $user_dir ){
     chdir( BISON_WWW_PATH . '/user/' );
 	
 	
@@ -74,7 +75,7 @@ function user_dir_max_mtime( $user_dir ){
 	
 	$out = array_map( 'intval', $output );
 	
-	return max( $out );
+	return $output;
 }
 
 function user_dir_pages_check( $user_dir, &$page_cache ){
@@ -105,9 +106,16 @@ $max_age    = strtotime( BISON_INSTANCE_MAX_AGE );
 foreach( $user_dirs as $mtime => $user_dir ){
 	if( $user_dir == '.' ) continue;
 	
-	$max_mtime = user_dir_max_mtime( $user_dir );
+	$mtimes = user_dir_mtime( $user_dir );
 	
-	if( $max_mtime < $max_age ){
+	echo count($mtimes) . "\n";
+	
+	$max_mtime 	= max($mtimes);
+	$diff_count = count(array_unique($mtimes));
+	
+	echo "USER: $user_dir, DIFF: $diff_count\n";
+	
+	if( ( ($max_mtime < $max_age) && $diff_count < 5 ) ){
 		if( user_dir_pages_check( $user_dir, $page_cache ) ){
 			$collect[] = $user_dir;
 		}
@@ -116,7 +124,7 @@ foreach( $user_dirs as $mtime => $user_dir ){
 
 foreach( $collect as $user_dir ){
 	echo "removing $user_dir\n";
-	remove_user_dir( $user_dir );	
+//	remove_user_dir( $user_dir );	
 }
 
 @unlink(BISON_PAGE_LIST_CACHE);

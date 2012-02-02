@@ -78,6 +78,19 @@ function user_dir_mtime( $user_dir ){
 	return $output;
 }
 
+function user_dir_page_mtime( $user_dir, $page_dir ){
+    chdir( BISON_WWW_PATH . '/user/' );
+	
+	$cmd = sprintf('find %s/content/%s -type f -printf "%%A@\n"',
+		escapeshellarg( $user_dir ), escapeshellarg( $page_dir ) );
+	
+	exec( $cmd, $output, $status );
+	
+	$out = array_map( 'intval', $output );
+	
+	return $output;	
+}
+
 function user_dir_pages_check( $user_dir, &$page_cache ){
 	$user_pages = user_dir_pages( $user_dir );
 	
@@ -87,7 +100,14 @@ function user_dir_pages_check( $user_dir, &$page_cache ){
 		
 		if( !isset($page_cache[$page_name]) ){
 			$page_cache[$page_name] = 0;
-		}		
+		}
+		
+		$mtimes = user_dir_page_mtime( $user_dir, $page_name );
+		
+		if( count(array_unique($mtimes)) > 20 ){
+			echo "PAGE HAS MODIFICATIONS: $uid/$page_name\n";
+		}
+			
 		
 		if( $page_cache[$page_name] < BISON_MIN_PAGE_COUNT ){
 			$page_cache[$page_name] += 1;
@@ -108,14 +128,14 @@ foreach( $user_dirs as $mtime => $user_dir ){
 	
 	$mtimes = user_dir_mtime( $user_dir );
 	
-	echo count($mtimes) . "\n";
+//	echo count($mtimes) . "\n";
 	
 	$max_mtime 	= max($mtimes);
 	$diff_count = count(array_unique($mtimes));
 	
 	echo "USER: $user_dir, DIFF: $diff_count\n";
 	
-	if( ( ($max_mtime < $max_age) && $diff_count < 5 ) ){
+	if( ( ($max_mtime < $max_age) && $diff_count < 300 ) ){
 		if( user_dir_pages_check( $user_dir, $page_cache ) ){
 			$collect[] = $user_dir;
 		}

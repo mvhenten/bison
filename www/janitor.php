@@ -9,7 +9,7 @@ ini_set('display_warnings', "false");
 define( 'BISON_WWW_PATH', '/home/hotglue/www-transglue' );
 //define( 'BISON_PAGE_LIST_CACHE', sys_get_temp_dir() . '/bison-page-list.json');
 
-define( 'BISON_INSTANCE_MAX_AGE', '-1 hours' );
+define( 'BISON_INSTANCE_MAX_AGE', '-2 hours' );
 //define( 'BISON_INSTANCE_MAX_AGE', '-2 minutes' );
 define( 'BISON_MIN_PAGE_COUNT', 4 );
 
@@ -112,8 +112,8 @@ function user_dir_pages_check( $user_dir, &$page_cache ){
 		$mod_delta = $max_mtime - $min_mtime;
 		
 		if( $mod_delta > BISON_MIN_MOD_DELTA ){
-			echo "PAGE HAS MODIFICATIONS: $uid/$page_name\n";
-			echo "MOD_DELTA: $mod_delta\n";
+			//echo "PAGE HAS MODIFICATIONS: $uid/$page_name\n";
+			//echo "MOD_DELTA: $mod_delta\n";
 			return false;
 		}
 		
@@ -135,31 +135,30 @@ $page_cache = array();
 $user_dirs  = list_user_dirs();
 $collect    = array();
 $max_age    = strtotime( BISON_INSTANCE_MAX_AGE );
+$keeps      = 0;
 
 foreach( $user_dirs as $mtime => $user_dir ){
 	if( $user_dir == '.' ) continue;
 	
-	//$mtimes = user_dir_mtime( $user_dir );
+	$mtimes = user_dir_mtime( $user_dir );
 	
-//	echo count($mtimes) . "\n";
-	
-	//$max_mtime 	= max($mtimes);
+	$max_mtime 	= max($mtimes);
 	//$diff_count = count(array_unique($mtimes));
 
-	if( user_dir_pages_check( $user_dir, $page_cache ) ){
+	if( ( $max_mtime < $max_age )  && user_dir_pages_check( $user_dir, $page_cache ) ){
 		$collect[] = $user_dir;
 	}
-
-	
-//	echo "USER: $user_dir, DIFF: $diff_count\n";
-	
-	//if( ( ($max_mtime < $max_age) && $diff_count < 300 ) ){
-	//}	
+	else{
+		$keeps++;
+	}
 }
 
 foreach( $collect as $user_dir ){
 	echo "removing $user_dir\n";
-//	remove_user_dir( $user_dir );	
+	remove_user_dir( $user_dir );	
 }
 
 @unlink(BISON_PAGE_LIST_CACHE);
+
+printf('processed %d user dirs, kept %d and removed %d',
+	count($user_dirs), $keeps, count($collect) );
